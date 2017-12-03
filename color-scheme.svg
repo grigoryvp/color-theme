@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style type="text/css">
+      text {
+        font-size: 1px;
+        font-family: monospace;
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="#213449" />
+  <text x="0" y="1">
+    <tspan>foo</tspan>
+    <tspan>bar</tspan>
+    <tspan>baz</tspan>
+  </text>
+</svg>  
