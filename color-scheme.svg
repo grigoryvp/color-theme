@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- "figure space": " " -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
   <defs>
     <style type="text/css">
@@ -6,12 +7,38 @@
         font-size: 1px;
         font-family: monospace;
       }
+      .d { fill: #F0B16C; }
+      <!-- Name of top level item. Functon in programming language,
+           heading 1 in xi -->
+      .h1 { fill: #00F080; }
+      <!-- Keyword in programming language. Outline item below top
+           level item, heading 2 in xi -->
+      .h2 { fill: #F0F000; }
+      <!-- Violet color, brighter than 'type', heading 3 in xi,
+           user-defined types (classes etc) -->
+      .h3 { fill: #F080F0; }
+      <!-- Sand color, burned keyword (yellow, heading 2), heading 4
+           in xi -->
+      .h4 { fill: #F0F080; }
+      <!-- Preprocessor directives, heading 5 in xi -->
+      .h5 { fill: #6699CC; }
+      <!-- Type in programming language, heading 6 in xi -->
+      .h6 { fill: #C040F0; }
     </style>
   </defs>
   <rect x="0" y="0" width="100%" height="100%" fill="#213449" />
   <text x="0" y="1">
-    <tspan>foo</tspan>
-    <tspan>bar</tspan>
-    <tspan>baz</tspan>
+    <tspan x="0" dy="0" class="d">normal text</tspan>
+    <tspan x="0" dy="1" class="h1">header 1</tspan>
+    <tspan x="0" dy="1" class="d">  normal text</tspan>
+    <tspan x="0" dy="1" class="h2">  header 2</tspan>
+    <tspan x="0" dy="1" class="d">    normal text</tspan>
+    <tspan x="0" dy="1" class="h3">    header 3</tspan>
+    <tspan x="0" dy="1" class="d">      normal text</tspan>
+    <tspan x="0" dy="1" class="h4">      header 4</tspan>
+    <tspan x="0" dy="1" class="d">        normal text</tspan>
+    <tspan x="0" dy="1" class="h5">        header 5</tspan>
+    <tspan x="0" dy="1" class="d">          normal text</tspan>
+    <tspan x="0" dy="1" class="h6">          header 6</tspan>
   </text>
 </svg>  
