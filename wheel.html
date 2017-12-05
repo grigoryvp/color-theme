@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script>
+  window.addEventListener('load', async () => {
+
+    const img = document.getElementById('img');
+    const res = await fetch(img.src);
+    const data = await res.text();
+    const question =
+      '\\s*\\.([\\w-]+)\\s*' +
+      '{[^}]*fill\\s*:\\s*#(\\w+)\\s*;[^}]*}';
+    const query = new RegExp(question, 'gm');
+    const colorList = [];
+
+    let match = query.exec(data);
+    while (match !== null) {
+      const name = match[1];
+      const color = match[2];
+      colorList.push({name, color});
+      match = query.exec(data);
+    }
+    console.log(colorList);
+  }, false);
+</script>
+</head>
+<body>
+  <img id="img" src="./color-scheme.svg"></img>
+</body>
+</html>
+
