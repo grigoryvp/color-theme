@@ -21,11 +21,35 @@
       colorList.push({name, color});
       match = query.exec(data);
     }
-    console.log(colorList);
+
+    const canvas = document.getElementById('wheel').getContext('2d');
+    canvas.fillStyle = '#f00';
+    canvas.fillRect(0, 0, 20, 20);
+    console.log(canvas);
   }, false);
 </script>
+<style>
+body { margin: 0; }
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 40vmax 40vmax;
+}
+#img {
+  width: 100%;
+  height: 100%;
+}
+#wheel {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+</style>
 </head>
 <body>
-  <img id="img" src="./color-scheme.svg"></img>
+  <div class="container">
+    <img id="img" src="./color-scheme.svg"></img>
+    <canvas id="wheel" width=100 height=100></canvas>
+  </div>
 </body>
 </html>
