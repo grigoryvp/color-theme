@@ -21,12 +21,27 @@
       colorList.push({name, color});
       match = query.exec(data);
     }
-
-    const canvas = document.getElementById('wheel').getContext('2d');
-    canvas.fillStyle = '#f00';
-    canvas.fillRect(0, 0, 20, 20);
-    console.log(canvas);
-  }, false);
+    onResize();
+  });
+  window.addEventListener('resize', onResize);
+  function onResize() {
+    const canvas = document.getElementById('wheel');
+    const cx = cy = canvas.clientWidth;
+    canvas.width = cx;
+    canvas.height = cy;
+    const ctx = canvas.getContext('2d');
+    const imgData = ctx.createImageData(cx, cy);
+    let pos = 0;
+    for (let y = 0; y < cy; y ++) {
+      for (let x = 0; x < cx; x ++) {
+        imgData.data[pos ++] = Math.random() * 256;
+        imgData.data[pos ++] = Math.random() * 256;
+        imgData.data[pos ++] = Math.random() * 256;
+        imgData.data[pos ++] = 255;
+      }
+    }
+    ctx.putImageData(imgData, 0, 0);
+  }
 </script>
 <style>
 body { margin: 0; }
