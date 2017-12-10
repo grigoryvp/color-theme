@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
 <script>
+  const colorList = [];
+
   window.addEventListener('load', async () => {
 
     const img = document.getElementById('img');
@@ -13,13 +15,12 @@
       '\\s*\\.([\\w-]+)\\s*' +
       '{[^}]*fill\\s*:\\s*#(\\w+)\\s*;[^}]*}';
     const query = new RegExp(question, 'gm');
-    const colorList = [];
 
     let match = query.exec(data);
     while (match !== null) {
       const name = match[1];
-      const color = match[2];
-      colorList.push({name, color});
+      const rgb = match[2];
+      colorList.push({name, rgb});
       match = query.exec(data);
     }
     onResize();
@@ -31,6 +32,8 @@
     canvas.width = cx;
     canvas.height = cy;
     const ctx = canvas.getContext('2d');
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#000";
     const imgData = ctx.createImageData(cx, cy);
     let pos = 0;
     for (let y = 0; y < cy; y ++) {
@@ -52,7 +55,18 @@
         }
       }
     }
+
     ctx.putImageData(imgData, 0, 0);
+
+    for (const colorInScheme of colorList) {
+      const color = tinycolor(`#${colorInScheme.rgb}`).toHsv();
+      const dx = Math.cos(color.h / 180 * Math.PI) * color.v;
+      const dy = Math.sin(color.h / 180 * Math.PI) * color.v;
+      const x = cx / 2 * (1 + dx);
+      const y = cx / 2 * (1 + dy);
+      console.log(colorInScheme.name, dx, dy, x, y);
+      ctx.fillText(colorInScheme.name, x, y);
+    }
   }
 </script>
 <style>

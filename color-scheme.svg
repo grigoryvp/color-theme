@@ -7,6 +7,7 @@
         font-size: 1px;
         font-family: monospace;
       }
+      .b { fill: #213449; }
       .d { fill: #F0B16C; }
       <!-- Name of top level item. Functon in programming language,
            heading 1 in xi -->
