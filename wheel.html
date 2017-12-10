@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
 <script>
   window.addEventListener('load', async () => {
 
@@ -34,10 +35,21 @@
     let pos = 0;
     for (let y = 0; y < cy; y ++) {
       for (let x = 0; x < cx; x ++) {
-        imgData.data[pos ++] = Math.random() * 256;
-        imgData.data[pos ++] = Math.random() * 256;
-        imgData.data[pos ++] = Math.random() * 256;
-        imgData.data[pos ++] = 255;
+        const [dx, dy] = [(x - cx / 2) / cx * 2, (y - cy / 2) / cy * 2];
+        const r = Math.sqrt(dx * dx + dy * dy);
+        if (r < 1) {
+          let radians = Math.atan2(dy, dx);
+          if (dy < 0) radians += Math.PI * 2;
+          const angle = radians * 180 / Math.PI;
+          const color = tinycolor({h: angle, s: 100, v: r});
+          imgData.data[pos ++] = color.toRgb().r;
+          imgData.data[pos ++] = color.toRgb().g;
+          imgData.data[pos ++] = color.toRgb().b;
+          imgData.data[pos ++] = 255;
+        }
+        else {
+          pos += 4;
+        }
       }
     }
     ctx.putImageData(imgData, 0, 0);
