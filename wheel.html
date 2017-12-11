@@ -33,7 +33,7 @@
     canvas.height = cy;
     const ctx = canvas.getContext('2d');
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#000";
+    ctx.fillStyle = "#fff";
     const imgData = ctx.createImageData(cx, cy);
     let pos = 0;
     for (let y = 0; y < cy; y ++) {
@@ -64,8 +64,8 @@
       const dy = Math.sin(color.h / 180 * Math.PI) * color.v;
       const x = cx / 2 * (1 + dx);
       const y = cx / 2 * (1 + dy);
-      console.log(colorInScheme.name, dx, dy, x, y);
-      ctx.fillText(colorInScheme.name, x, y);
+      const text = `${colorInScheme.name} (${color.s.toPrecision(2)})`;
+      ctx.fillText(text, x, y);
     }
   }
 </script>
