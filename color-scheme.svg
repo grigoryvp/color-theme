@@ -18,20 +18,22 @@
       <!-- Violet color, brighter than 'type', heading 3 in xi,
            user-defined types (classes etc) -->
       .h3 { fill: #F080F0; }
-      <!-- Sand color, burned keyword (yellow, heading 2), heading 4
-           in xi -->
-      .h4 { fill: #F0F080; }
+      <!-- heading 4 in xi -->
+      .h4 { fill: #a1e517; }
       <!-- Preprocessor directives, heading 5 in xi -->
       .h5 { fill: #6699CC; }
       <!-- Type in programming language, heading 6 in xi -->
       .h6 { fill: #C040F0; }
+      <!-- accent -->
+      .ac { fill: #00f0f0; }
     </style>
   </defs>
   <rect x="0" y="0" width="100%" height="100%" fill="#213449" />
   <text x="0" y="1">
     <tspan x="0" dy="0" class="d">normal text</tspan>
     <tspan x="0" dy="1" class="h1">header 1</tspan>
-    <tspan x="0" dy="1" class="d">  normal text</tspan>
+    <tspan x="0" dy="1" class="d">  normal text </tspan>
+      <tspan class="ac">accent</tspan>
     <tspan x="0" dy="1" class="h2">  header 2</tspan>
     <tspan x="0" dy="1" class="d">    normal text</tspan>
     <tspan x="0" dy="1" class="h3">    header 3</tspan>

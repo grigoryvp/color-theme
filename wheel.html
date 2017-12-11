@@ -32,19 +32,17 @@
     canvas.width = cx;
     canvas.height = cy;
     const ctx = canvas.getContext('2d');
-    ctx.font = "16px Arial";
-    ctx.fillStyle = "#fff";
     const imgData = ctx.createImageData(cx, cy);
     let pos = 0;
     for (let y = 0; y < cy; y ++) {
       for (let x = 0; x < cx; x ++) {
         const [dx, dy] = [(x - cx / 2) / cx * 2, (y - cy / 2) / cy * 2];
         const r = Math.sqrt(dx * dx + dy * dy);
-        if (r < 1) {
+        if (r < 0.8) {
           let radians = Math.atan2(dy, dx);
           if (dy < 0) radians += Math.PI * 2;
           const angle = radians * 180 / Math.PI;
-          const color = tinycolor({h: angle, s: 100, v: r});
+          const color = tinycolor({h: angle, s: 100, v: r / 0.8});
           imgData.data[pos ++] = color.toRgb().r;
           imgData.data[pos ++] = color.toRgb().g;
           imgData.data[pos ++] = color.toRgb().b;
@@ -60,12 +58,20 @@
 
     for (const colorInScheme of colorList) {
       const color = tinycolor(`#${colorInScheme.rgb}`).toHsv();
-      const dx = Math.cos(color.h / 180 * Math.PI) * color.v;
-      const dy = Math.sin(color.h / 180 * Math.PI) * color.v;
+      const dx = Math.cos(color.h / 180 * Math.PI) * color.v * 0.8;
+      const dy = Math.sin(color.h / 180 * Math.PI) * color.v * 0.8;
       const x = cx / 2 * (1 + dx);
       const y = cx / 2 * (1 + dy);
-      const text = `${colorInScheme.name} (${color.s.toPrecision(2)})`;
-      ctx.fillText(text, x, y);
+      ctx.beginPath();
+      ctx.arc(x, y, 10, 0, 2 * Math.PI, false);
+      ctx.fillStyle = `#${colorInScheme.rgb}`;
+      ctx.fill();
+      ctx.strokeStyle = "#fff";
+      ctx.stroke();
+      ctx.fillStyle = "#fff";
+      ctx.font = "12px Arial";
+      const text = `${colorInScheme.name} ${Math.round(color.s * 100)}`;
+      ctx.fillText(text, x + 15, y);
     }
   }
 </script>
