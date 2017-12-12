@@ -7,28 +7,38 @@
         font-size: 1px;
         font-family: monospace;
       }
-      .b { fill: #213449; }
-      .d { fill: #F0B16C; }
+
+      .b { fill: #26394D; stroke: hsv(210, 50, 30); }
+      .d { fill: #E6AC73; stroke: hsv(30, 50, 90); }
+      <!-- Comment -->
+      .c { fill: #6B8299; stroke: hsv(210, 30, 60); }
       <!-- Name of top level item. Functon in programming language,
            heading 1 in xi -->
-      .h1 { fill: #00F080; }
+      .h1 { fill: #00E673; stroke: hsv(150, 100, 90); }
       <!-- Keyword in programming language. Outline item below top
            level item, heading 2 in xi -->
-      .h2 { fill: #F0F000; }
+      .h2 { fill: #E6E600; stroke: hsv(60, 100, 90); }
       <!-- Violet color, brighter than 'type', heading 3 in xi,
            user-defined types (classes etc) -->
-      .h3 { fill: #F080F0; }
+      .h3 { fill: #E600E6; stroke: hsv(300, 100, 90); }
       <!-- heading 4 in xi -->
-      .h4 { fill: #a1e517; }
+      .h4 { fill: #73E600; stroke: hsv(90, 100, 90); }
       <!-- Preprocessor directives, heading 5 in xi -->
-      .h5 { fill: #6699CC; }
+      .h5 { fill: #0F9999; stroke: hsv(180, 100, 70); }
       <!-- Type in programming language, heading 6 in xi -->
-      .h6 { fill: #C040F0; }
+      .h6 { fill: #8C19FF; stroke: hsv(270, 90, 100); }
       <!-- accent -->
-      .ac { fill: #00f0f0; }
+      .ac { fill: #00E6E6; stroke: hsv(180, 100, 90); }
+      <!-- Parts of text intended to be preprocessed. Macro names in
+           programming languages, links in xi -->
+      .ma { fill: #0080FF; stroke: hsv(210, 100, 100); }
+      <!-- Quoted string -->
+      .st { fill: #E60073; stroke: hsv(330, 100, 90); }
+      <!-- Number -->
+      .nm { fill: #FF6666; stroke: hsv(0, 60, 100); }
     </style>
   </defs>
-  <rect x="0" y="0" width="100%" height="100%" fill="#213449" />
+  <rect x="0" y="0" width="100%" height="100%" fill="#26394D" />
   <text x="0" y="1">
     <tspan x="0" dy="0" class="d">normal text</tspan>
     <tspan x="0" dy="1" class="h1">header 1</tspan>
@@ -36,12 +46,16 @@
       <tspan class="ac">accent</tspan>
     <tspan x="0" dy="1" class="h2">  header 2</tspan>
     <tspan x="0" dy="1" class="d">    normal text</tspan>
+      <tspan class="ma">macro/link</tspan>
     <tspan x="0" dy="1" class="h3">    header 3</tspan>
     <tspan x="0" dy="1" class="d">      normal text</tspan>
+      <tspan class="nm">number</tspan>
     <tspan x="0" dy="1" class="h4">      header 4</tspan>
     <tspan x="0" dy="1" class="d">        normal text</tspan>
+      <tspan class="st">string</tspan>
     <tspan x="0" dy="1" class="h5">        header 5</tspan>
     <tspan x="0" dy="1" class="d">          normal text</tspan>
+      <tspan class="c">comment</tspan>
     <tspan x="0" dy="1" class="h6">          header 6</tspan>
   </text>
 </svg>  

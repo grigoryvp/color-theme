@@ -13,14 +13,14 @@
     const data = await res.text();
     const question =
       '\\s*\\.([\\w-]+)\\s*' +
-      '{[^}]*fill\\s*:\\s*#(\\w+)\\s*;[^}]*}';
+      '{[^}]*fill\\s*:\\s*([^};]+)\\s*;[^}]*}';
     const query = new RegExp(question, 'gm');
 
     let match = query.exec(data);
     while (match !== null) {
       const name = match[1];
-      const rgb = match[2];
-      colorList.push({name, rgb});
+      const val = match[2];
+      colorList.push({name, val});
       match = query.exec(data);
     }
     onResize();
@@ -36,7 +36,7 @@
     let pos = 0;
     for (let y = 0; y < cy; y ++) {
       for (let x = 0; x < cx; x ++) {
-        const [dx, dy] = [(x - cx / 2) / cx * 2, (y - cy / 2) / cy * 2];
+        const [dx, dy] = [(x - cx / 2) / cx * 2, (cy / 2 - y) / cy * 2];
         const r = Math.sqrt(dx * dx + dy * dy);
         if (r < 0.8) {
           let radians = Math.atan2(dy, dx);
@@ -57,14 +57,14 @@
     ctx.putImageData(imgData, 0, 0);
 
     for (const colorInScheme of colorList) {
-      const color = tinycolor(`#${colorInScheme.rgb}`).toHsv();
+      const color = tinycolor(colorInScheme.val).toHsv();
       const dx = Math.cos(color.h / 180 * Math.PI) * color.v * 0.8;
       const dy = Math.sin(color.h / 180 * Math.PI) * color.v * 0.8;
       const x = cx / 2 * (1 + dx);
-      const y = cx / 2 * (1 + dy);
+      const y = cy - cy / 2 * (1 + dy);
       ctx.beginPath();
       ctx.arc(x, y, 10, 0, 2 * Math.PI, false);
-      ctx.fillStyle = `#${colorInScheme.rgb}`;
+      ctx.fillStyle = tinycolor(colorInScheme.val).toHex8String();
       ctx.fill();
       ctx.strokeStyle = "#fff";
       ctx.stroke();
