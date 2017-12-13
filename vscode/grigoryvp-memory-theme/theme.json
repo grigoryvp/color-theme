@@ -1,0 +1,35 @@
+{
+  "name": "grigoryvp-memory",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#213449",
+    "editor.foreground": "#F0B16C",
+    "editor.lineHighlightBackground": "#203040"
+  },
+  "tokenColors": [{
+    "name": "Language operators like '+', '-' etc",
+    "scope": "keyword.operator",
+    "settings": {"foreground": "#F0F0F0"}
+  }, {
+    "scope": "entity.name.tag",
+    "settings": {"foreground": "#00E673"}
+  }, {
+    "name": "brackets of XML/HTML tags",
+    "scope": "punctuation.definition.tag",
+    "settings": {"foreground": "#334D66"}
+  }, {
+    "name": "variable names",
+    "scope": [
+        "variable",
+        "entity.other.attribute-name"
+    ],
+    "settings": {"foreground": "#F0B16C" }
+  }, {
+    "scope": [
+      "keyword",
+      "keyword.operator.js",
+      "storage.type"
+    ],
+    "setting": {"foreground": "#e6e600"}
+  }]
+}

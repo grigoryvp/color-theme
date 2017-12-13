@@ -1,0 +1,14 @@
+{
+  "name": "memory-theme",
+  "version": "1.0.0",
+  "publisher": "grigoryvp",
+  "engines": { "vscode": "^1.0.0" },
+  "categories": [ "Themes" ],
+  "contributes": {
+    "themes": [{
+      "label": "grigoryvp memory theme",
+      "uiTheme": "vs-dark",
+      "path": "./theme.json"
+    }]
+  }
+}
