@@ -12,6 +12,8 @@
       .d { fill: #E6AC73; stroke: hsv(30, 50, 90); }
       <!-- Comment -->
       .c { fill: #6B8299; stroke: hsv(210, 30, 60); }
+      <!-- Demi-hidden text -->
+      .h { fill: #334D66; stroke: hsv(210, 50, 40); }
       <!-- Name of top level item. Functon in programming language,
            heading 1 in xi -->
       .h1 { fill: #00E673; stroke: hsv(150, 100, 90); }
@@ -33,14 +35,15 @@
            programming languages, links in xi -->
       .ma { fill: #0080FF; stroke: hsv(210, 100, 100); }
       <!-- Quoted string -->
-      .st { fill: #E60073; stroke: hsv(330, 100, 90); }
+      .st { fill: #FF4D4D; stroke: hsv(0, 70, 100); }
       <!-- Number -->
-      .nm { fill: #FF6666; stroke: hsv(0, 60, 100); }
+      .nm { fill: #E60073; stroke: hsv(330, 100, 90); }
     </style>
   </defs>
   <rect x="0" y="0" width="100%" height="100%" fill="#26394D" />
   <text x="0" y="1">
     <tspan x="0" dy="0" class="d">normal text</tspan>
+      <tspan class="h">hidden text</tspan>
     <tspan x="0" dy="1" class="h1">header 1</tspan>
     <tspan x="0" dy="1" class="d">  normal text </tspan>
       <tspan class="ac">accent</tspan>
