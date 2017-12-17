@@ -14,8 +14,7 @@
       .c { fill: #6B8299; stroke: hsv(210, 30, 60); }
       <!-- Demi-hidden text -->
       .h { fill: #334D66; stroke: hsv(210, 50, 40); }
-      <!-- Name of top level item. Functon in programming language,
-           heading 1 in xi -->
+      <!-- Heading 1 in xi; string in programming language -->
       .h1 { fill: #00E673; stroke: hsv(150, 100, 90); }
       <!-- Keyword in programming language. Outline item below top
            level item, heading 2 in xi -->
@@ -23,7 +22,8 @@
       <!-- Violet color, brighter than 'type', heading 3 in xi,
            user-defined types (classes etc) -->
       .h3 { fill: #E600E6; stroke: hsv(300, 100, 90); }
-      <!-- heading 4 in xi -->
+      <!-- heading 4 in xi (looks alot like heading 1, so never used
+           in programming language coloring -->
       .h4 { fill: #73E600; stroke: hsv(90, 100, 90); }
       <!-- Preprocessor directives, heading 5 in xi -->
       .h5 { fill: #0F9999; stroke: hsv(180, 100, 70); }
@@ -34,8 +34,6 @@
       <!-- Parts of text intended to be preprocessed. Macro names in
            programming languages, links in xi -->
       .ma { fill: #0080FF; stroke: hsv(210, 100, 100); }
-      <!-- Quoted string -->
-      .st { fill: #FF4D4D; stroke: hsv(0, 70, 100); }
       <!-- Number -->
       .nm { fill: #E60073; stroke: hsv(330, 100, 90); }
     </style>
@@ -44,21 +42,20 @@
   <text x="0" y="1">
     <tspan x="0" dy="0" class="d">normal text</tspan>
       <tspan class="h">hidden text</tspan>
-    <tspan x="0" dy="1" class="h1">header 1</tspan>
+    <tspan x="0" dy="1" class="h1">header 1 / string</tspan>
     <tspan x="0" dy="1" class="d">  normal text </tspan>
       <tspan class="ac">accent</tspan>
-    <tspan x="0" dy="1" class="h2">  header 2</tspan>
+    <tspan x="0" dy="1" class="h2">  header 2 / keyword</tspan>
     <tspan x="0" dy="1" class="d">    normal text</tspan>
       <tspan class="ma">macro/link</tspan>
-    <tspan x="0" dy="1" class="h3">    header 3</tspan>
+    <tspan x="0" dy="1" class="h3">    header 3 / user types</tspan>
     <tspan x="0" dy="1" class="d">      normal text</tspan>
       <tspan class="nm">number</tspan>
     <tspan x="0" dy="1" class="h4">      header 4</tspan>
     <tspan x="0" dy="1" class="d">        normal text</tspan>
-      <tspan class="st">string</tspan>
-    <tspan x="0" dy="1" class="h5">        header 5</tspan>
+    <tspan x="0" dy="1" class="h5">        header 5 / preprocessor</tspan>
     <tspan x="0" dy="1" class="d">          normal text</tspan>
       <tspan class="c">comment</tspan>
-    <tspan x="0" dy="1" class="h6">          header 6</tspan>
+    <tspan x="0" dy="1" class="h6">          header 6 / type</tspan>
   </text>
 </svg>  
