@@ -20,14 +20,14 @@
            level item, heading 2 in xi -->
       .h2 { fill: #E6E600; stroke: hsv(60, 100, 90); }
       <!-- Violet color, brighter than 'type', heading 3 in xi,
-           user-defined types (classes etc) -->
+           types in programming language (classes etc) -->
       .h3 { fill: #E600E6; stroke: hsv(300, 100, 90); }
       <!-- heading 4 in xi (looks alot like heading 1, so never used
            in programming language coloring -->
       .h4 { fill: #73E600; stroke: hsv(90, 100, 90); }
       <!-- Preprocessor directives, heading 5 in xi -->
       .h5 { fill: #0F9999; stroke: hsv(180, 100, 70); }
-      <!-- Type in programming language, heading 6 in xi -->
+      <!-- Method call programming language, heading 6 in xi -->
       .h6 { fill: #8C19FF; stroke: hsv(270, 90, 100); }
       <!-- accent -->
       .ac { fill: #00E6E6; stroke: hsv(180, 100, 90); }
