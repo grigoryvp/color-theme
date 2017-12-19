@@ -8,14 +8,63 @@
   },
   "tokenColors": [{
     "name": "Language operators like '+', '-' etc",
-    "scope": "keyword.operator",
+    "scope": [
+      "keyword.operator",
+      "meta.tag.xml",
+      "meta.tag.other.html",
+      "meta.brace.round",
+      "meta.brace.square",
+      "punctuation.terminator.statement",
+      "punctuation.definition.block",
+      "meta.structure.dictionary.json",
+      "storage.type.function.arrow.js",
+      "punctuation.accessor",
+      "punctuation.separator.key-value",
+      "punctuation.separator.comma",
+      "punctuation.terminator.rule.css",
+      "punctuation.definition.binding-pattern.object.js",
+      "punctuation.definition.string.begin",
+      "punctuation.definition.string.end",
+      "punctuation.definition.parameters.begin",
+      "punctuation.definition.parameters.end",
+      "punctuation.support.type.property-name.begin.json",
+      "punctuation.support.type.property-name.end.json",
+      "punctuation.section.property-list.begin.bracket.curly.css",
+      "punctuation.section.property-list.end.bracket.curly.css"
+    ],
     "settings": {"foreground": "#F0F0F0"}
   }, {
-    "scope": "entity.name.tag",
-    "settings": {"foreground": "#00E673"}
+    "name": "keywords",
+    "scope": [
+      "keyword.control",
+      "keyword.operator.new.js",
+      "keyword.operator.expression.of.js",
+      "keyword.operator.expression.in.js",
+      "keyword.operator.expression.typeof.js",
+      "variable.language.this.js",
+      "variable.language.super.js",
+      "support.type.object.module.js",
+      "support.constant.json.js",
+      "meta.property-name.css",
+      "entity.name.tag",
+      "storage.type",
+      "storage.modifier.js",
+      "storage.modifier.async.js"
+    ],
+    "settings": {"foreground": "#E6E600"}
+  }, {
+    "name": "types",
+    "scope": [
+      "entity.name.type",
+      "entity.other.inherited-class.js"
+    ],
+    "settings": {"foreground": "#E600E6"}
   }, {
     "name": "brackets of XML/HTML tags",
-    "scope": "punctuation.definition.tag",
+    "scope": [
+      "punctuation.definition.tag",
+      "meta.tag.other.html"
+    ],
     "settings": {"foreground": "#334D66"}
   }, {
     "name": "variable names",
@@ -26,10 +75,39 @@
     "settings": {"foreground": "#F0B16C" }
   }, {
     "scope": [
-      "keyword",
-      "keyword.operator.js",
-      "storage.type"
+      "string",
+      "markup.heading.markdown"
     ],
-    "setting": {"foreground": "#e6e600"}
+    "settings": {"foreground": "#00E673" }
+  }, {
+    "name": "literal string",
+    "scope": [
+      "text.xml",
+      "text.html.basic",
+      "text.html.vue-html"
+    ],
+    "settings": {"foreground": "#F0F0F0" }
+  }, {
+  }, {
+    "scope": "constant.numeric",
+    "settings": {"foreground": "#E60073"}
+  }, {
+    "name": "method call",
+    "scope": "meta.function-call.js",
+    "settings": {"foreground": "#8C19FF"}
+  }, {
+    "scope": "comment",
+    "settings": {"foreground": "#6B8299"}
+  }, {
+    "name": "links",
+    "scope": [
+      "string.other.link.title.markdown",
+      "meta.link.inline.markdown"
+    ],
+    "settings": {"foreground": "#0080FF"}
+  }, {
+    "name": "enums and preprocessor",
+    "scope": "meta.property-value.css",
+    "settings": {"foreground": "#0F9999"}
   }]
 }
