@@ -10,55 +10,53 @@
 
       .b { fill: #26394D; stroke: hsv(210, 50, 30); }
       .d { fill: #E6AC73; stroke: hsv(30, 50, 90); }
-      <!-- Comment -->
+      <!-- comment -->
       .c { fill: #6B8299; stroke: hsv(210, 30, 60); }
-      <!-- Demi-hidden text -->
+      <!-- demi-hidden text -->
       .h { fill: #334D66; stroke: hsv(210, 50, 40); }
-      <!-- Heading 1 in xi; string in programming language -->
-      .h1 { fill: #00E673; stroke: hsv(150, 100, 90); }
-      <!-- Keyword in programming language. Outline item below top
-           level item, heading 2 in xi -->
-      .h2 { fill: #E6E600; stroke: hsv(60, 100, 90); }
-      <!-- Violet color, brighter than 'type', heading 3 in xi,
-           types in programming language (classes etc) -->
-      .h3 { fill: #E600E6; stroke: hsv(300, 100, 90); }
-      <!-- heading 4 in xi (looks alot like heading 1, so never used
-           in programming language coloring -->
-      .h4 { fill: #73E600; stroke: hsv(90, 100, 90); }
-      <!-- Preprocessor directives, heading 5 in xi -->
-      .h5 { fill: #0F9999; stroke: hsv(180, 100, 70); }
-      <!-- Method call programming language, heading 6 in xi -->
-      .h6 { fill: #8C19FF; stroke: hsv(270, 90, 100); }
+
+      <!-- keyword; h1 in xi; tag name in xml -->
+      .h1 { fill: #E6E600; stroke: hsv(60, 100, 90); }
+      <!-- type; h2 in xi -->
+      .h2 { fill: #E600E6; stroke: hsv(300, 100, 90); }
+      <!-- method call; h3 in xi -->
+      .h3 { fill: #8C19FF; stroke: hsv(270, 90, 100); }
+      <!-- enum; preprocessor; constant; h4 -->
+      .h4 { fill: #0F9999; stroke: hsv(180, 100, 70); }
+      <!-- property; h5 -->
+      .h5 { fill: #FF6666; stroke: hsv(0, 60, 100); }
+      <!-- number; h6 -->
+      .h6 { fill: #E60073; stroke: hsv(330, 100, 90); }
       <!-- accent -->
       .ac { fill: #00E6E6; stroke: hsv(180, 100, 90); }
-      <!-- Parts of text intended to be preprocessed. Macro names in
-           programming languages, links in xi -->
+      <!-- macro; link -->
       .ma { fill: #0080FF; stroke: hsv(210, 100, 100); }
-      <!-- Number -->
-      .nm { fill: #E60073; stroke: hsv(330, 100, 90); }
-      <!-- Property -->
-      .p { fill: #FF6666; stroke: hsv(0, 60, 100); }
+      <!-- string -->
+      .st { fill: #00E673; stroke: hsv(150, 100, 90); }
+      <!-- string escape -->
+      .se { fill: #8CFF19; stroke: hsv(90, 90, 100); }
     </style>
   </defs>
   <rect x="0" y="0" width="100%" height="100%" fill="#26394D" />
   <text x="0" y="1">
     <tspan x="0" dy="0" class="d">normal text</tspan>
       <tspan class="h">hidden text</tspan>
-    <tspan x="0" dy="1" class="h1">header 1 / string</tspan>
+    <tspan x="0" dy="1" class="h1">keyword; h1</tspan>
     <tspan x="0" dy="1" class="d">  normal text </tspan>
       <tspan class="ac">accent</tspan>
-    <tspan x="0" dy="1" class="h2">  header 2 / keyword</tspan>
+    <tspan x="0" dy="1" class="h2">  type; h2</tspan>
     <tspan x="0" dy="1" class="d">    normal text</tspan>
       <tspan class="ma">macro/link</tspan>
-    <tspan x="0" dy="1" class="h3">    header 3 / user types</tspan>
+    <tspan x="0" dy="1" class="h3">    mthod call; h3</tspan>
     <tspan x="0" dy="1" class="d">      normal text</tspan>
-      <tspan class="nm">number</tspan>
-    <tspan x="0" dy="1" class="h4">      header 4</tspan>
+    <tspan x="0" dy="1" class="h4">      enum; preproc; const; h4</tspan>
     <tspan x="0" dy="1" class="d">        normal text</tspan>
-      <tspan class="p">property</tspan>
-    <tspan x="0" dy="1" class="h5">        header 5 / preprocessor / enum</tspan>
+    <tspan x="0" dy="1" class="h5">        property; h5</tspan>
     <tspan x="0" dy="1" class="d">          normal text</tspan>
       <tspan class="c">comment</tspan>
-    <tspan x="0" dy="1" class="h6">          header 6 / method</tspan>
+    <tspan x="0" dy="1" class="h6">          number; h6</tspan>
+    <tspan x="0" dy="1" class="st">            string</tspan>
+      <tspan class="se">${with}</tspan>
+      <tspan class="st">escape</tspan>
   </text>
 </svg>  
