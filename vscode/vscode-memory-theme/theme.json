@@ -9,58 +9,54 @@
   "tokenColors": [{
     "name": "Language operators like '+', '-' etc",
     "scope": [
+      "punctuation",
       "keyword.operator",
       "meta.tag.xml",
       "meta.tag.other.html",
       "meta.brace.round",
       "meta.brace.square",
-      "punctuation.terminator.statement",
-      "punctuation.definition.block",
       "meta.structure.dictionary.json",
-      "storage.type.function.arrow.js",
-      "punctuation.accessor",
-      "punctuation.separator.key-value",
-      "punctuation.separator.comma",
-      "punctuation.terminator.rule.css",
-      "punctuation.definition.binding-pattern.object.js",
-      "punctuation.definition.string.begin",
-      "punctuation.definition.string.end",
-      "punctuation.definition.parameters.begin",
-      "punctuation.definition.parameters.end",
-      "punctuation.support.type.property-name.begin.json",
-      "punctuation.support.type.property-name.end.json",
-      "punctuation.section.property-list.begin.bracket.curly.css",
-      "punctuation.section.property-list.end.bracket.curly.css"
+      "storage.type.function.arrow.js"
     ],
     "settings": {"foreground": "#F0F0F0"}
   }, {
     "name": "keywords",
     "scope": [
-      "keyword.control",
-      "keyword.operator.new.js",
-      "keyword.operator.expression.of.js",
-      "keyword.operator.expression.in.js",
-      "keyword.operator.expression.typeof.js",
+      "keyword",
       "variable.language.this.js",
       "variable.language.super.js",
       "support.type.object.module.js",
       "support.constant.json.js",
-      "meta.property-name.css",
       "entity.name.tag",
       "storage.type",
       "storage.modifier.js",
-      "storage.modifier.async.js"
+      "storage.modifier.async.js",
+      "constant.language.import-export-all.ts",
+      "storage.modifier.async.ts"
     ],
     "settings": {"foreground": "#E6E600"}
+  }, {
+    "name": "property",
+    "scope": [
+      "meta.property-name",
+      "support.type.property-name",
+      "meta.object-literal.key.ts",
+      "variable.other.property.ts",
+      "variable.other.object.property.ts",
+      "support.variable.property.dom.ts",
+      "support.variable.property.ts"
+    ],
+    "settings": {"foreground": "#FF6666"}
   }, {
     "name": "types",
     "scope": [
       "entity.name.type",
+      "support.type",
       "entity.other.inherited-class.js"
     ],
     "settings": {"foreground": "#E600E6"}
   }, {
-    "name": "brackets of XML/HTML tags",
+    "name": "elements to dim",
     "scope": [
       "punctuation.definition.tag",
       "meta.tag.other.html"
@@ -74,11 +70,16 @@
     ],
     "settings": {"foreground": "#F0B16C" }
   }, {
+    "name": "strings",
     "scope": [
       "string",
-      "markup.heading.markdown"
+      "punctuation.definition.heading"
     ],
     "settings": {"foreground": "#00E673" }
+  }, {
+    "name": "escaped within string",
+    "scope": ["constant.character.escape"],
+    "settings": {"foreground": "#8CFF19"}
   }, {
     "name": "literal string",
     "scope": [
@@ -89,25 +90,40 @@
     "settings": {"foreground": "#F0F0F0" }
   }, {
   }, {
+    "name": "number",
     "scope": "constant.numeric",
     "settings": {"foreground": "#E60073"}
   }, {
     "name": "method call",
-    "scope": "meta.function-call.js",
+    "scope": [
+      "support.function",
+      "meta.function-call",
+      "entity.name.function.ts"
+    ],
     "settings": {"foreground": "#8C19FF"}
   }, {
-    "scope": "comment",
+    "name": "comments",
+    "scope": [
+      "comment",
+      "punctuation.definition.block.tag.jsdoc",
+      "storage.type.class.jsdoc",
+      "variable.other.jsdoc"
+    ],
     "settings": {"foreground": "#6B8299"}
   }, {
     "name": "links",
     "scope": [
       "string.other.link.title.markdown",
-      "meta.link.inline.markdown"
+      "meta.link"
     ],
     "settings": {"foreground": "#0080FF"}
   }, {
-    "name": "enums and preprocessor",
-    "scope": "meta.property-value.css",
+    "name": "enums, constants, preprocessor",
+    "scope": [
+      "constant",
+      "support.variable",
+      "meta.property-value.css"
+    ],
     "settings": {"foreground": "#0F9999"}
   }]
 }
