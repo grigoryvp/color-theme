@@ -19,12 +19,12 @@
       .h1 { fill: #E6E600; stroke: hsv(60, 100, 90); }
       <!-- type; h2 in xi -->
       .h2 { fill: #E600E6; stroke: hsv(300, 100, 90); }
-      <!-- method call; h3 in xi -->
-      .h3 { fill: #8C19FF; stroke: hsv(270, 90, 100); }
+      <!-- property; h3 -->
+      .h3 { fill: #FF6666; stroke: hsv(0, 60, 100); }
       <!-- enum; preprocessor; constant; h4 -->
       .h4 { fill: #0F9999; stroke: hsv(180, 100, 70); }
-      <!-- property; h5 -->
-      .h5 { fill: #FF6666; stroke: hsv(0, 60, 100); }
+      <!-- method call; h5 in xi -->
+      .h5 { fill: #8C19FF; stroke: hsv(270, 90, 100); }
       <!-- number; h6 -->
       .h6 { fill: #E60073; stroke: hsv(330, 100, 90); }
       <!-- accent -->
@@ -47,11 +47,11 @@
     <tspan x="0" dy="1" class="h2">  type; h2</tspan>
     <tspan x="0" dy="1" class="d">    normal text</tspan>
       <tspan class="ma">macro/link</tspan>
-    <tspan x="0" dy="1" class="h3">    mthod call; h3</tspan>
+    <tspan x="0" dy="1" class="h3">    property; h3</tspan>
     <tspan x="0" dy="1" class="d">      normal text</tspan>
     <tspan x="0" dy="1" class="h4">      enum; preproc; const; h4</tspan>
     <tspan x="0" dy="1" class="d">        normal text</tspan>
-    <tspan x="0" dy="1" class="h5">        property; h5</tspan>
+    <tspan x="0" dy="1" class="h5">        method call; h5</tspan>
     <tspan x="0" dy="1" class="d">          normal text</tspan>
       <tspan class="c">comment</tspan>
     <tspan x="0" dy="1" class="h6">          number; h6</tspan>
