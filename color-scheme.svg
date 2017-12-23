@@ -33,8 +33,6 @@
       .ma { fill: #0080FF; stroke: hsv(210, 100, 100); }
       <!-- string -->
       .st { fill: #00E673; stroke: hsv(150, 100, 90); }
-      <!-- string escape -->
-      .se { fill: #8CFF19; stroke: hsv(90, 90, 100); }
     </style>
   </defs>
   <rect x="0" y="0" width="100%" height="100%" fill="#26394D" />
@@ -56,7 +54,7 @@
       <tspan class="c">comment</tspan>
     <tspan x="0" dy="1" class="h6">          number; h6</tspan>
     <tspan x="0" dy="1" class="st">            string</tspan>
-      <tspan class="se">${with}</tspan>
+      <tspan class="h4">${with}</tspan>
       <tspan class="st">escape</tspan>
   </text>
 </svg>  
