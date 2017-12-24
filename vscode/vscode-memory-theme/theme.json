@@ -4,6 +4,7 @@
   "colors": {
     "editor.background": "#213449",
     "editor.foreground": "#F0B16C",
+    "editorGutter.background": "#152535",
     "editor.lineHighlightBackground": "#203040"
   },
   "tokenColors": [{
@@ -23,10 +24,13 @@
     "name": "keywords",
     "scope": [
       "keyword",
+      "keyword.operator.expression.in.js",
+      "keyword.operator.expression.typeof",
       "variable.language.this.js",
       "variable.language.super.js",
       "support.type.object.module.js",
       "support.constant.json.js",
+      "support.class.console.js",
       "entity.name.tag",
       "storage.type",
       "storage.modifier.js",
@@ -40,7 +44,7 @@
     "scope": [
       "meta.property-name",
       "support.type.property-name",
-      "meta.object-literal.key.ts",
+      "meta.object-literal.key",
       "variable.other.property.ts",
       "variable.other.object.property.ts",
       "support.variable.property.dom.ts",
@@ -77,9 +81,9 @@
     ],
     "settings": {"foreground": "#00E673" }
   }, {
-    "name": "escaped within string",
+    "name": "escaped within string; same as preproc right now",
     "scope": ["constant.character.escape"],
-    "settings": {"foreground": "#8CFF19"}
+    "settings": {"foreground": "#0F9999"}
   }, {
     "name": "literal string",
     "scope": [
@@ -105,13 +109,14 @@
     "name": "comments",
     "scope": [
       "comment",
+      "punctuation.definition.comment",
       "punctuation.definition.block.tag.jsdoc",
       "storage.type.class.jsdoc",
       "variable.other.jsdoc"
     ],
     "settings": {"foreground": "#6B8299"}
   }, {
-    "name": "links",
+    "name": "links, macros",
     "scope": [
       "string.other.link.title.markdown",
       "meta.link"
