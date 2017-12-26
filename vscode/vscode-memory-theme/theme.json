@@ -12,12 +12,14 @@
     "scope": [
       "punctuation",
       "keyword.operator",
+      "keyword.control.ternary.java",
       "meta.tag.xml",
       "meta.tag.other.html",
       "meta.brace.round",
       "meta.brace.square",
       "meta.structure.dictionary.json",
-      "storage.type.function.arrow.js"
+      "storage.type.generic.wildcard",
+      "storage.type.function.arrow"
     ],
     "settings": {"foreground": "#F0F0F0"}
   }, {
@@ -26,37 +28,60 @@
       "keyword",
       "keyword.operator.expression.in.js",
       "keyword.operator.expression.typeof",
-      "variable.language.this.js",
+      "keyword.operator.logical",
+      "keyword.operator.new",
+      "variable.language.this",
       "variable.language.super.js",
+      "variable.parameter.function.language.special.self",
+      "variable.language.special.self",
       "support.type.object.module.js",
       "support.constant.json.js",
       "support.class.console.js",
+      "support.type.primitive.ts",
       "entity.name.tag",
-      "storage.type",
-      "storage.modifier.js",
-      "storage.modifier.async.js",
+      "storage.modifier",
+      "storage.type.primitive",
+      "storage.type.ts",
+      "storage.type.js",
+      "storage.type.function.ts",
+      "storage.type.function.python",
+      "storage.type.class.ts",
+      "storage.type.class.js",
+      "storage.type.class.python",
+      "constant.language.null.js",
+      "constant.language.undefined.js",
+      "constant.language.boolean",
       "constant.language.import-export-all.ts",
-      "storage.modifier.async.ts"
+      "constant.language.ruby",
+      "constant.language.python"
     ],
     "settings": {"foreground": "#E6E600"}
   }, {
-    "name": "property",
+    "name": "properties",
     "scope": [
       "meta.property-name",
       "support.type.property-name",
       "meta.object-literal.key",
       "variable.other.property.ts",
-      "variable.other.object.property.ts",
-      "support.variable.property.dom.ts",
-      "support.variable.property.ts"
+      "variable.other.object.property",
+      "variable.other.readwrite.instance.ruby",
+      "variable.other.readwrite.class.ruby",
+      "variable.other.readwrite.global.ruby",
+      "constant.language.symbol.hashkey",
+      "variable.object.property.js",
+      "support.variable.property"
     ],
     "settings": {"foreground": "#FF6666"}
   }, {
-    "name": "types",
+    "name": "types, classes, interfaces",
     "scope": [
-      "entity.name.type",
-      "support.type",
-      "entity.other.inherited-class.js"
+      "entity.other.inherited-class",
+      "support.class",
+      "storage.type.java",
+      "storage.type.generic",
+      "storage.type.object.array.java",
+      "support.constant.math.js",
+      "entity.name.type"
     ],
     "settings": {"foreground": "#E600E6"}
   }, {
@@ -69,21 +94,25 @@
   }, {
     "name": "variable names",
     "scope": [
-        "variable",
-        "entity.other.attribute-name"
+      "entity.other.attribute-name"
     ],
     "settings": {"foreground": "#F0B16C" }
   }, {
     "name": "strings",
     "scope": [
-      "string",
-      "punctuation.definition.heading"
+      "punctuation.definition.heading",
+      "storage.modifier.package.java",
+      "storage.modifier.import.java",
+      "string"
     ],
     "settings": {"foreground": "#00E673" }
   }, {
-    "name": "escaped within string; same as preproc right now",
-    "scope": ["constant.character.escape"],
-    "settings": {"foreground": "#0F9999"}
+    "name": "escaped within string; same as macro right now",
+    "scope": [
+      "keyword.control.anchor.regexp",
+      "constant.character.escape"
+    ],
+    "settings": {"foreground": "#0080FF"}
   }, {
     "name": "literal string",
     "scope": [
@@ -101,17 +130,20 @@
     "name": "method call",
     "scope": [
       "support.function",
-      "meta.function-call",
-      "entity.name.function.ts"
+      "keyword.other.special-method",
+      "entity.name.function"
     ],
     "settings": {"foreground": "#8C19FF"}
   }, {
     "name": "comments",
     "scope": [
       "comment",
+      "keyword.other.phpdoc",
+      "keyword.other.documentation.javadoc",
       "punctuation.definition.comment",
       "punctuation.definition.block.tag.jsdoc",
       "storage.type.class.jsdoc",
+      "string.quoted.docstring.multi.python",
       "variable.other.jsdoc"
     ],
     "settings": {"foreground": "#6B8299"}
@@ -123,11 +155,20 @@
     ],
     "settings": {"foreground": "#0080FF"}
   }, {
-    "name": "enums, constants, preprocessor",
+    "name": "enums, constants, preprocessor, decorators",
     "scope": [
       "constant",
       "support.variable",
-      "meta.property-value.css"
+      "support.constant.property.math.js",
+      "variable.other.constant",
+      "meta.property-value.css",
+      "meta.preprocessor",
+      "meta.declaration.annotation.java",
+      "meta.function.decorator.python",
+      "keyword.control.import.c",
+      "variable.other.enummember.ts",
+      "entity.name.function.decorator.python",
+      "entity.name.function.preprocessor"
     ],
     "settings": {"foreground": "#0F9999"}
   }]
