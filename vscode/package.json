@@ -1,6 +1,8 @@
 {
-  "name": "memory-theme",
-  "version": "1.0.0",
+  "name": "grigoryvp-memory-theme",
+  "displayName": "Memory Color Theme",
+  "description": "Memory Color Theme for Visual Studio Code",
+  "version": "1.0.1",
   "publisher": "grigoryvp",
   "engines": { "vscode": "^1.19.0" },
   "categories": [ "Themes" ],
