@@ -2,8 +2,9 @@
   "name": "memory-theme",
   "version": "1.0.0",
   "publisher": "grigoryvp",
-  "engines": { "vscode": "^1.0.0" },
+  "engines": { "vscode": "^1.19.0" },
   "categories": [ "Themes" ],
+  "icon": "icon.png",
   "contributes": {
     "themes": [{
       "label": "grigoryvp memory theme",
