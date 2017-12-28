@@ -19,6 +19,7 @@
       "meta.brace.square",
       "meta.structure.dictionary.json",
       "storage.type.generic.wildcard",
+      "keyword.operator.logical.java",
       "storage.type.function.arrow"
     ],
     "settings": {"foreground": "#F0F0F0"}
