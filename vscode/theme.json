@@ -172,5 +172,11 @@
       "entity.name.function.preprocessor"
     ],
     "settings": {"foreground": "#0F9999"}
+  }, {
+    "name": "accent",
+    "scope": [
+      "accent.xi"
+    ],
+    "settings": {"foreground": "#00E6E6"}
   }]
 }
