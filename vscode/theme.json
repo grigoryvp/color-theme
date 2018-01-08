@@ -27,8 +27,7 @@
     "name": "keywords",
     "scope": [
       "keyword",
-      "keyword.operator.expression.in.js",
-      "keyword.operator.expression.typeof",
+      "keyword.operator.expression",
       "keyword.operator.logical",
       "keyword.operator.new",
       "variable.language.this",
@@ -44,10 +43,11 @@
       "storage.type.primitive",
       "storage.type.ts",
       "storage.type.js",
+      "storage.type.function.js",
       "storage.type.function.ts",
       "storage.type.function.python",
-      "storage.type.class.ts",
       "storage.type.class.js",
+      "storage.type.class.ts",
       "storage.type.class.python",
       "constant.language.null.js",
       "constant.language.undefined.js",
@@ -63,7 +63,7 @@
       "meta.property-name",
       "support.type.property-name",
       "meta.object-literal.key",
-      "variable.other.property.ts",
+      "variable.other.property",
       "variable.other.object.property",
       "variable.other.readwrite.instance.ruby",
       "variable.other.readwrite.class.ruby",
@@ -95,6 +95,7 @@
   }, {
     "name": "variable names",
     "scope": [
+      "source.js",
       "entity.other.attribute-name"
     ],
     "settings": {"foreground": "#F0B16C" }
