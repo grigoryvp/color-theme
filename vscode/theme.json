@@ -82,7 +82,8 @@
       "storage.type.generic",
       "storage.type.object.array.java",
       "support.constant.math.js",
-      "entity.name.type"
+      "entity.name.type",
+      "entity.other.attribute-name.class.jade"
     ],
     "settings": {"foreground": "#E600E6"}
   }, {
