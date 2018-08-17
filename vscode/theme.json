@@ -5,7 +5,8 @@
     "editor.background": "#213449",
     "editor.foreground": "#F0B16C",
     "editorGutter.background": "#152535",
-    "editor.lineHighlightBackground": "#203040"
+    "editor.lineHighlightBackground": "#203040",
+    "breadcrumb.background": "#152535"
   },
   "tokenColors": [{
     "name": "Language operators like '+', '-' etc",
