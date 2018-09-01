@@ -137,7 +137,7 @@
       "keyword.other.special-method",
       "entity.name.function"
     ],
-    "settings": {"foreground": "#8C19FF"}
+    "settings": {"foreground": "#b266ffff"}
   }, {
     "name": "comments",
     "scope": [
