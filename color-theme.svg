@@ -24,7 +24,7 @@
       <!-- enum; preprocessor; constant; h4 -->
       .h4 { fill: #0F9999; stroke: hsv(180, 100, 70); }
       <!-- method call; h5 in xi -->
-      .h5 { fill: #8C19FF; stroke: hsv(270, 90, 100); }
+      .h5 { fill: hsl(270, 100%, 70%); stroke: hsv(270, 60, 100); }
       <!-- number; h6 -->
       .h6 { fill: #E60073; stroke: hsv(330, 100, 90); }
       <!-- accent -->
