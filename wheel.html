@@ -30,6 +30,7 @@
         const val = match[2];
         colorList.push({name, val});
         match = query.exec(data);
+        console.log(name, tinycolor(val).toHex8String());
       }
     }
     onResize();
