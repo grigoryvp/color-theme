@@ -58,7 +58,11 @@
           imgData.data[pos ++] = 255;
         }
         else {
-          pos += 4;
+          // Backgroun color.
+          imgData.data[pos ++] = 0;
+          imgData.data[pos ++] = 0;
+          imgData.data[pos ++] = 0;
+          imgData.data[pos ++] = 255;
         }
       }
     }
