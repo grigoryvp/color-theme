@@ -7,6 +7,7 @@
   "engines": { "vscode": "^1.19.0" },
   "categories": [ "Themes" ],
   "icon": "icon.png",
+  "repository": "https://github.com/grigoryvp/color-theme.git",
   "contributes": {
     "themes": [{
       "label": "grigoryvp memory theme",
