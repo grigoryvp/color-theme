@@ -175,6 +175,7 @@
 
     {
       const root = document.getElementById('colorSeq');
+      root.innerHTML = '';
       for (const [colorName, colorVal] of Object.entries(colorMap)) {
         if (colorName.startsWith('#')) continue;
         const label = document.createElement('div');

@@ -4,15 +4,28 @@
   "description": "Memory Color Theme for Visual Studio Code",
   "version": "1.0.7",
   "publisher": "grigoryvp",
-  "engines": { "vscode": "^1.19.0" },
-  "categories": [ "Themes" ],
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "categories": [
+    "Themes"
+  ],
   "icon": "icon.png",
   "repository": "https://github.com/grigoryvp/color-theme.git",
+  "scripts": {
+    "build": "vsce package",
+    "publish": "chrome https://marketplace.visualstudio.com/manage"
+  },
   "contributes": {
-    "themes": [{
-      "label": "grigoryvp memory theme",
-      "uiTheme": "vs-dark",
-      "path": "./theme.json"
-    }]
+    "themes": [
+      {
+        "label": "grigoryvp memory theme",
+        "uiTheme": "vs-dark",
+        "path": "./theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^1.47.0"
   }
 }
