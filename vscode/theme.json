@@ -99,7 +99,8 @@
     "scope": [
       "source.js",
       "variable.other.constant.js",
-      "entity.other.attribute-name"
+      "entity.other.attribute-name",
+      "support.variable.object"
     ],
     "settings": {"foreground": "#F0B16C" }
   }, {
