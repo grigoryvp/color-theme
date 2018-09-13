@@ -11,6 +11,7 @@
   "tokenColors": [{
     "name": "Language operators like '+', '-' etc",
     "scope": [
+      "constant.other.color.rgb-value.xi",
       "punctuation",
       "keyword.operator",
       "keyword.control.ternary.java",
@@ -27,6 +28,7 @@
   }, {
     "name": "keywords",
     "scope": [
+      "entity.name.function.xi",
       "keyword",
       "keyword.operator.expression",
       "keyword.operator.logical",
@@ -61,6 +63,7 @@
   }, {
     "name": "properties",
     "scope": [
+      "constant.character.character-class.regexp.xi",
       "meta.property-name",
       "support.type.property-name",
       "meta.object-literal.key",
@@ -77,6 +80,7 @@
   }, {
     "name": "types, classes, interfaces",
     "scope": [
+      "constant.regexp.xi",
       "entity.other.inherited-class",
       "support.class",
       "storage.type.java",
@@ -90,6 +94,7 @@
   }, {
     "name": "elements to dim",
     "scope": [
+      "punctuation.definition.tag.xi",
       "punctuation.definition.tag",
       "meta.tag.other.html"
     ],
@@ -106,6 +111,7 @@
   }, {
     "name": "strings",
     "scope": [
+      "beginning.punctuation.definition.quote.markdown.xi",
       "punctuation.definition.heading",
       "storage.modifier.package.java",
       "storage.modifier.import.java",
@@ -130,11 +136,15 @@
   }, {
   }, {
     "name": "number",
-    "scope": "constant.numeric",
+    "scope": [
+      "invalid.xi",
+      "constant.numeric"
+    ],
     "settings": {"foreground": "#E60073"}
   }, {
     "name": "callable",
     "scope": [
+      "entity.name.class.xi",
       "support.function",
       "keyword.other.special-method",
       "entity.name.function"
@@ -143,6 +153,7 @@
   }, {
     "name": "comments",
     "scope": [
+      "beginning.punctuation.definition.list.markdown.xi",
       "comment",
       "keyword.other.phpdoc",
       "keyword.other.documentation.javadoc",
@@ -156,6 +167,7 @@
   }, {
     "name": "links",
     "scope": [
+      "constant.character.xi",
       "string.other.link.title.markdown",
       "meta.link"
     ],
@@ -163,6 +175,7 @@
   }, {
     "name": "enums, constants, preprocessor, decorators",
     "scope": [
+      "keyword.control.xi",
       "constant",
       "support.variable",
       "support.constant.property.math.js",
