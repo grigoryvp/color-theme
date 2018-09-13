@@ -7,4 +7,4 @@ with "Xi" personal wiki markup language:
 
 ## Color table
 
-<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_table.png">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_table.png" width="256">
