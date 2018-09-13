@@ -86,7 +86,7 @@
       "entity.name.type",
       "entity.other.attribute-name.class.jade"
     ],
-    "settings": {"foreground": "#E600E6"}
+    "settings": {"foreground": "#b366ff"}
   }, {
     "name": "elements to dim",
     "scope": [
@@ -98,6 +98,7 @@
     "name": "variable names",
     "scope": [
       "source.js",
+      "variable.other.constant.js",
       "entity.other.attribute-name"
     ],
     "settings": {"foreground": "#F0B16C" }
@@ -111,12 +112,12 @@
     ],
     "settings": {"foreground": "#00E673" }
   }, {
-    "name": "escaped within string; same as macro right now",
+    "name": "escaped within string; same as link now",
     "scope": [
       "keyword.control.anchor.regexp",
       "constant.character.escape"
     ],
-    "settings": {"foreground": "#0080FF"}
+    "settings": {"foreground": "#66b3ff"}
   }, {
     "name": "literal string",
     "scope": [
@@ -137,7 +138,7 @@
       "keyword.other.special-method",
       "entity.name.function"
     ],
-    "settings": {"foreground": "#b266ff"}
+    "settings": {"foreground": "#00b3b3"}
   }, {
     "name": "comments",
     "scope": [
@@ -174,7 +175,7 @@
       "entity.name.function.decorator.python",
       "entity.name.function.preprocessor"
     ],
-    "settings": {"foreground": "#0F9999"}
+    "settings": {"foreground": "#ff66ff"}
   }, {
     "name": "accent",
     "scope": [

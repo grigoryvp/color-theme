@@ -22,14 +22,14 @@
     "string": "hsv(150, 100, 90)",
     "#h1": "keyword, tag name",
     "h1": "hsv(60, 100, 90)",
-    "#h2": "type",
-    "h2": "hsv(300, 100, 90)",
+    "#h2": "type => method call",
+    "h2": "hsv(180, 100, 70)",
     "#h3": "property",
     "h3": "hsv(0, 60, 100)",
-    "#h4": "enum, preprocessor, constant",
-    "h4": "hsv(180, 100, 70)",
-    "#h5": "method call",
-    "h5": "hsv(270, 60, 100)",
+    "#h4": "enum, preprocessor, constant => type",
+    "h4": "hsv(270, 60, 100)",
+    "#h5": "method call => enum, preprocessor, constant",
+    "h5": "hsv(300, 60, 100)",
     "#h6": "number",
     "h6": "hsv(330, 100, 90)"
   };
@@ -48,7 +48,7 @@
           .c { fill: #comment; }
           .h { fill: #hidden; }
           .ac { fill: #accent; }
-          .ma { fill: #link; }
+          .l { fill: #link; }
           .st { fill: #string; }
           .h1 { fill: #h1; }
           .h2 { fill: #h2; }
@@ -61,43 +61,43 @@
       <rect x="0" y="0" width="100%" height="100%" fill="#26394D" />
       <text x="0" y="1">
         <tspan x="0" dy="0" class="d">normal</tspan>
-          <tspan class="ma">macro/link</tspan>
+          <tspan class="l">link</tspan>
           <tspan class="ac">accent</tspan>
           <tspan class="c">comment</tspan>
           <tspan class="h">hidden</tspan>
-        <tspan x="0" dy="1" class="h1">keyword; h1</tspan>
+        <tspan x="0" dy="1" class="h1">h1, keyword, tag</tspan>
         <tspan x="0" dy="1" class="d">  normal</tspan>
-          <tspan class="ma">macro/link</tspan>
+          <tspan class="l">link</tspan>
           <tspan class="ac">accent</tspan>
           <tspan class="c">comment</tspan>
           <tspan class="h">hidden</tspan>
-        <tspan x="0" dy="1" class="h2">  type; h2</tspan>
+        <tspan x="0" dy="1" class="h2">  h2, callable</tspan>
         <tspan x="0" dy="1" class="d">    normal</tspan>
-          <tspan class="ma">macro/link</tspan>
+          <tspan class="l">link</tspan>
           <tspan class="ac">accent</tspan>
           <tspan class="c">comment</tspan>
           <tspan class="h">hidden</tspan>
-        <tspan x="0" dy="1" class="h3">    property; h3</tspan>
+        <tspan x="0" dy="1" class="h3">    h3, property</tspan>
         <tspan x="0" dy="1" class="d">      normal</tspan>
-          <tspan class="ma">macro/link</tspan>
+          <tspan class="l">link</tspan>
           <tspan class="ac">accent</tspan>
           <tspan class="c">comment</tspan>
           <tspan class="h">hidden</tspan>
-        <tspan x="0" dy="1" class="h4">      enum; preproc; const; h4</tspan>
+        <tspan x="0" dy="1" class="h4">      h4, type</tspan>
         <tspan x="0" dy="1" class="d">        normal</tspan>
-          <tspan class="ma">macro/link</tspan>
+          <tspan class="l">link</tspan>
           <tspan class="ac">accent</tspan>
           <tspan class="c">comment</tspan>
           <tspan class="h">hidden</tspan>
-        <tspan x="0" dy="1" class="h5">        method call; h5</tspan>
+        <tspan x="0" dy="1" class="h5">        h5, enum, preprocessor, constant</tspan>
         <tspan x="0" dy="1" class="d">          normal</tspan>
-          <tspan class="ma">macro/link</tspan>
+          <tspan class="l">link</tspan>
           <tspan class="ac">accent</tspan>
           <tspan class="c">comment</tspan>
           <tspan class="h">hidden</tspan>
-        <tspan x="0" dy="1" class="h6">          number; h6</tspan>
+        <tspan x="0" dy="1" class="h6">          h6, number</tspan>
         <tspan x="0" dy="1" class="st">            string</tspan>
-          <tspan class="h4">with</tspan>
+          <tspan class="l">with</tspan>
           <tspan class="st">escape</tspan>
       </text>
     </svg>  
@@ -165,13 +165,24 @@
     let svgSrcPatched = svgSrc;
     for (const [colorName, colorVal] of Object.entries(colorMap)) {
       if (colorName.startsWith('#')) continue;
-      const colorHex = tinycolor(colorVal).toHex8String();
+      const colorHex = tinycolor(colorVal).toHex8String().slice(0, -2);
       svgSrcPatched = svgSrcPatched.replace(`#${colorName}`, colorHex);
     }
 
     const encoded = toBase64(svgSrcPatched);
     const data = `data:image/svg+xml;base64,${encoded}`;
     document.getElementById('img').src = data;
+
+    {
+      const root = document.getElementById('colorSeq');
+      for (const [colorName, colorVal] of Object.entries(colorMap)) {
+        if (colorName.startsWith('#')) continue;
+        const label = document.createElement('div');
+        const colorHex = tinycolor(colorVal).toHex8String().slice(0, -2);
+        label.innerHTML = `${colorName} ${colorHex}`;
+        root.appendChild(label);
+      }
+    }
   }
 </script>
 <style>
@@ -179,7 +190,10 @@ body { margin: 0; }
 .container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 40vmax 40vmax;
+  grid-template-columns: 15vmax 40vmax 40vmax;
+}
+#colorSeq {
+  display: inline-block;
 }
 #img {
   width: 100%;
@@ -193,6 +207,7 @@ body { margin: 0; }
 </head>
 <body>
   <div class="container">
+    <div id="colorSeq"></div>
     <img id="img"></img>
     <canvas id="wheel" width=100 height=100></canvas>
   </div>
