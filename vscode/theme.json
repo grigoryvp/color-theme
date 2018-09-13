@@ -132,7 +132,7 @@
     "scope": "constant.numeric",
     "settings": {"foreground": "#E60073"}
   }, {
-    "name": "method call",
+    "name": "callable",
     "scope": [
       "support.function",
       "keyword.other.special-method",
