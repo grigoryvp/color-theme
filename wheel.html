@@ -3,39 +3,110 @@
 <head>
 <meta charset="utf-8" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jshashes/1.0.7/hashes.min.js"></script>
 <script>
-  const colorList = [];
 
-  window.addEventListener('load', async () => {
+  function toBase64(v) {
+    return btoa(encodeURIComponent(v).replace(/%([0-9A-F]{2})/g, (_, v) => {
+      return String.fromCharCode(parseInt(v, 16));
+    }))
+  }
 
-    let data = null;
-    const img = document.getElementById('img');
-    try {
-      const res = await fetch(img.src);
-      data = await res.text();
-    }
-    catch (e) {
-      console.log("Load from server");
-    }
+  const colorMap = {
+    "background": "hsv(210, 50, 30)",
+    "default": "hsv(30, 50, 90)",
+    "comment": "hsv(210, 30, 60)",
+    "hidden": "hsv(210, 50, 40)",
+    "accent": "hsv(180, 100, 90)",
+    "link": "hsv(210, 60, 100)",
+    "string": "hsv(150, 100, 90)",
+    "#h1": "keyword, tag name",
+    "h1": "hsv(60, 100, 90)",
+    "#h2": "type",
+    "h2": "hsv(300, 100, 90)",
+    "#h3": "property",
+    "h3": "hsv(0, 60, 100)",
+    "#h4": "enum, preprocessor, constant",
+    "h4": "hsv(180, 100, 70)",
+    "#h5": "method call",
+    "h5": "hsv(270, 60, 100)",
+    "#h6": "number",
+    "h6": "hsv(330, 100, 90)"
+  };
 
-    if (data) {
-      const question =
-        '\\s*\\.([\\w-]+)\\s*' +
-        '{[^}]*fill\\s*:\\s*([^};]+)\\s*;[^}]*}';
-      const query = new RegExp(question, 'gm');
+  const svgSrc = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <defs>
+        <style type="text/css">
+          text {
+            font-size: 1px;
+            font-family: monospace;
+          }
 
-      let match = query.exec(data);
-      while (match !== null) {
-        const name = match[1];
-        const val = match[2];
-        colorList.push({name, val});
-        match = query.exec(data);
-        console.log(name, tinycolor(val).toHex8String());
-      }
-    }
-    onResize();
-  });
+          .b { fill: #background; }
+          .d { fill: #default; }
+          .c { fill: #comment; }
+          .h { fill: #hidden; }
+          .ac { fill: #accent; }
+          .ma { fill: #link; }
+          .st { fill: #string; }
+          .h1 { fill: #h1; }
+          .h2 { fill: #h2; }
+          .h3 { fill: #h3; }
+          .h4 { fill: #h4; }
+          .h5 { fill: #h5; }
+          .h6 { fill: #h6; }
+        </style>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" fill="#26394D" />
+      <text x="0" y="1">
+        <tspan x="0" dy="0" class="d">normal</tspan>
+          <tspan class="ma">macro/link</tspan>
+          <tspan class="ac">accent</tspan>
+          <tspan class="c">comment</tspan>
+          <tspan class="h">hidden</tspan>
+        <tspan x="0" dy="1" class="h1">keyword; h1</tspan>
+        <tspan x="0" dy="1" class="d">  normal</tspan>
+          <tspan class="ma">macro/link</tspan>
+          <tspan class="ac">accent</tspan>
+          <tspan class="c">comment</tspan>
+          <tspan class="h">hidden</tspan>
+        <tspan x="0" dy="1" class="h2">  type; h2</tspan>
+        <tspan x="0" dy="1" class="d">    normal</tspan>
+          <tspan class="ma">macro/link</tspan>
+          <tspan class="ac">accent</tspan>
+          <tspan class="c">comment</tspan>
+          <tspan class="h">hidden</tspan>
+        <tspan x="0" dy="1" class="h3">    property; h3</tspan>
+        <tspan x="0" dy="1" class="d">      normal</tspan>
+          <tspan class="ma">macro/link</tspan>
+          <tspan class="ac">accent</tspan>
+          <tspan class="c">comment</tspan>
+          <tspan class="h">hidden</tspan>
+        <tspan x="0" dy="1" class="h4">      enum; preproc; const; h4</tspan>
+        <tspan x="0" dy="1" class="d">        normal</tspan>
+          <tspan class="ma">macro/link</tspan>
+          <tspan class="ac">accent</tspan>
+          <tspan class="c">comment</tspan>
+          <tspan class="h">hidden</tspan>
+        <tspan x="0" dy="1" class="h5">        method call; h5</tspan>
+        <tspan x="0" dy="1" class="d">          normal</tspan>
+          <tspan class="ma">macro/link</tspan>
+          <tspan class="ac">accent</tspan>
+          <tspan class="c">comment</tspan>
+          <tspan class="h">hidden</tspan>
+        <tspan x="0" dy="1" class="h6">          number; h6</tspan>
+        <tspan x="0" dy="1" class="st">            string</tspan>
+          <tspan class="h4">with</tspan>
+          <tspan class="st">escape</tspan>
+      </text>
+    </svg>  
+  `;
+
+  window.addEventListener('load', () => onResize());
+
   window.addEventListener('resize', onResize);
+
   function onResize() {
     const canvas = document.getElementById('wheel');
     const cx = cy = canvas.clientWidth;
@@ -70,23 +141,37 @@
 
     ctx.putImageData(imgData, 0, 0);
 
-    for (const colorInScheme of colorList) {
-      const color = tinycolor(colorInScheme.val).toHsv();
+    for (const [colorName, colorVal] of Object.entries(colorMap)) {
+      // JSON comments
+      if (colorName.startsWith('#')) continue;
+
+      const color = tinycolor(colorVal).toHsv();
       const dx = Math.cos(color.h / 180 * Math.PI) * color.v * 0.8;
       const dy = Math.sin(color.h / 180 * Math.PI) * color.v * 0.8;
       const x = cx / 2 * (1 + dx);
       const y = cy - cy / 2 * (1 + dy);
       ctx.beginPath();
       ctx.arc(x, y, 10, 0, 2 * Math.PI, false);
-      ctx.fillStyle = tinycolor(colorInScheme.val).toHex8String();
+      ctx.fillStyle = tinycolor(colorVal).toHex8String();
       ctx.fill();
       ctx.strokeStyle = "#fff";
       ctx.stroke();
       ctx.fillStyle = "#fff";
       ctx.font = "12px Arial";
-      const text = `${colorInScheme.name} ${Math.round(color.s * 100)}`;
+      const text = `${colorName} ${Math.round(color.s * 100)}`;
       ctx.fillText(text, x + 15, y);
     }
+
+    let svgSrcPatched = svgSrc;
+    for (const [colorName, colorVal] of Object.entries(colorMap)) {
+      if (colorName.startsWith('#')) continue;
+      const colorHex = tinycolor(colorVal).toHex8String();
+      svgSrcPatched = svgSrcPatched.replace(`#${colorName}`, colorHex);
+    }
+
+    const encoded = toBase64(svgSrcPatched);
+    const data = `data:image/svg+xml;base64,${encoded}`;
+    document.getElementById('img').src = data;
   }
 </script>
 <style>
@@ -108,7 +193,7 @@ body { margin: 0; }
 </head>
 <body>
   <div class="container">
-    <img id="img" src="./color-theme.svg"></img>
+    <img id="img"></img>
     <canvas id="wheel" width=100 height=100></canvas>
   </div>
 </body>

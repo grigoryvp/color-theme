@@ -152,7 +152,7 @@
     ],
     "settings": {"foreground": "#6B8299"}
   }, {
-    "name": "links, macros",
+    "name": "links",
     "scope": [
       "string.other.link.title.markdown",
       "meta.link"
