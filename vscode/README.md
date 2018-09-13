@@ -7,7 +7,4 @@ with "Xi" personal wiki markup language:
 
 ## Color table
 
-<p style="background-color: #26394d;">
-<div style="color: #e6ac73;">plain text</div>
-<div style="color: #e6e600;">h1, keyword, tag</div>
-</p>
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_table.png">
