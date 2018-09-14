@@ -3,9 +3,13 @@
   "type": "dark",
   "colors": {
     "editor.background": "#26394d",
+    "sideBar.background": "#26394d",
     "editor.foreground": "#e6ac73",
-    "editorGutter.background": "#152535",
+    "sideBar.foreground": "#e6ac73",
     "editor.lineHighlightBackground": "#203040",
+    "list.inactiveSelectionBackground": "#203040",
+    "list.hoverBackground": "#203040",
+    "editorGutter.background": "#152535",
     "breadcrumb.background": "#152535"
   },
   "tokenColors": [{
