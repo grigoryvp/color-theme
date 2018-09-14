@@ -13,6 +13,7 @@
   }
 
   const colorMap = {
+    "artboard": "hsv(210, 50, 20)",
     "background": "hsv(210, 50, 30)",
     "default": "hsv(30, 50, 90)",
     "comment": "hsv(210, 30, 60)",
@@ -58,7 +59,8 @@
           .h6 { fill: #h6; }
         </style>
       </defs>
-      <rect x="0" y="0" width="100%" height="100%" fill="#26394D" />
+      <rect x="0" y="0" width="90%" height="100%" fill="#background" />
+      <rect x="90%" y="0" width="10%" height="100%" fill="#artboard" />
       <text x="0" y="1">
         <tspan x="0" dy="0" class="d">normal</tspan>
           <tspan class="l">link</tspan>
@@ -166,7 +168,8 @@
     for (const [colorName, colorVal] of Object.entries(colorMap)) {
       if (colorName.startsWith('#')) continue;
       const colorHex = tinycolor(colorVal).toHex8String().slice(0, -2);
-      svgSrcPatched = svgSrcPatched.replace(`#${colorName}`, colorHex);
+      const pattern = new RegExp(`#${colorName}`, 'g');
+      svgSrcPatched = svgSrcPatched.replace(pattern, colorHex);
     }
 
     const encoded = toBase64(svgSrcPatched);
