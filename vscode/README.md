@@ -47,3 +47,19 @@ methods, named code blocks and so on:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h2.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h2.png" width="256">
+
+### Heading 3
+
+From third color it's starting to be complicated. The only one non-toxic
+"pure" color remaining is green. We can use it for 3-rd most popular syntax
+element in programming languages, property access. But that leaves another
+element, strings. Which is rarely used in mose of the code (as software
+developers we tend to avoid hardcoding number and strings), but then it's
+**JSON**. And heredoc. That are near completely string. So green should be
+reserved for strings and we are left with a color known as "desaturated red"
+(0 degrees HSV, saturation reduced to 60%, making it more orange then red).
+This color a lot like foreground color (which is actual orange at 30 degrees
+HSV but that looks more like sand due to low saturation set to 50%) but
+still can be easilty distinguides from it and looks really nice in 'foo.bar'
+combinations where 'foo' is a foreground identifier color and 'bar' is a
+heading 3 property access color:
