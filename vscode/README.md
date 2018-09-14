@@ -63,3 +63,6 @@ HSV but that looks more like sand due to low saturation set to 50%) but
 still can be easilty distinguides from it and looks really nice in 'foo.bar'
 combinations where 'foo' is a foreground identifier color and 'bar' is a
 heading 3 property access color:
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h3.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h3.png" width="256">
