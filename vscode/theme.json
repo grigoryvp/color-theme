@@ -2,8 +2,8 @@
   "name": "grigoryvp-memory",
   "type": "dark",
   "colors": {
-    "editor.background": "#213449",
-    "editor.foreground": "#F0B16C",
+    "editor.background": "#26394d",
+    "editor.foreground": "#e6ac73",
     "editorGutter.background": "#152535",
     "editor.lineHighlightBackground": "#203040",
     "breadcrumb.background": "#152535"
