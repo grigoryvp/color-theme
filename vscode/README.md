@@ -66,3 +66,14 @@ heading 3 property access color:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h3.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h3.png" width="256">
+
+### Heading 4
+
+With all non-acide pure colors used and green reserved vi are on the
+unsteady ground now. Violet color, located between blue and magenta
+(270 degrees HSV) looks less acidic if saturations is reduced to 60%. For
+programming languages it is used for types: both language-defined like
+'String' and user-defined like 'Foo' in 'class Foo':
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h4.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h4.png" width="256">
