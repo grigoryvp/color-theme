@@ -31,7 +31,19 @@ The color theme is tailored towards Xi markup language and should make
 6 levels of headers to stand out from plain text, code smaples, terms and
 highlights. The first color is yellow (60 degrees HSV color wheel) with
 a value slightly reduced to 90%. For programming languages it's used to
-mark common things that stand out: keywords and tag names.
+mark common things that stand out: keywords and tag names:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h1.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h1.png" width="256">
+
+### Heading 2
+
+Second color is a cyan (180 degrees HSV) with value decreaded to 70%, making
+it less bright. Like yellow for h1, this color is completely different from
+foreground color while not being as acid as magenta or red. For programming
+lagnugae it's used to mark second common thing that stand out: different
+kinds of callables, both declaration and reference. This includes functions,
+methods, named code blocks and so on:
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h2.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h2.png" width="256">
