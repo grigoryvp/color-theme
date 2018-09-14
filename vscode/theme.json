@@ -3,14 +3,17 @@
   "type": "dark",
   "colors": {
     "editor.background": "#26394d",
-    "sideBar.background": "#26394d",
+    "sideBar.background": "#203040",
+    "terminal.background": "#203040",
     "editor.foreground": "#e6ac73",
     "sideBar.foreground": "#e6ac73",
+    "terminal.foreground": "#e6ac73",
     "editor.lineHighlightBackground": "#203040",
-    "list.inactiveSelectionBackground": "#203040",
-    "list.hoverBackground": "#203040",
+    "list.inactiveSelectionBackground": "#152535",
+    "list.hoverBackground": "#152535",
     "editorGutter.background": "#152535",
-    "breadcrumb.background": "#152535"
+    "breadcrumb.background": "#152535",
+    "sideBar.border": "#152535"
   },
   "tokenColors": [{
     "name": "Language operators like '+', '-' etc",
