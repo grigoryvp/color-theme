@@ -40,7 +40,6 @@
       "support.type.object.module.js",
       "support.constant.json.js",
       "support.class.console.js",
-      "support.type.primitive.ts",
       "entity.name.tag",
       "storage.modifier",
       "storage.type.primitive",
@@ -89,6 +88,7 @@
       "storage.type.object.array.java",
       "support.constant.math.js",
       "entity.name.type",
+      "support.type.primitive.ts",
       "entity.other.attribute-name.class.jade"
     ],
     "settings": {"foreground": "#b366ff"}
