@@ -105,6 +105,7 @@
     "scope": [
       "source.js",
       "variable.other.constant.js",
+      "variable.other.constant.ts",
       "entity.other.attribute-name",
       "support.variable.object"
     ],
