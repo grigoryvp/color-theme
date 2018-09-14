@@ -27,10 +27,11 @@ color theme, just not **that** bright.
 
 ### Heading 1
 
-The color scheme is tailored towards Xi markup language and should make
+The color theme is tailored towards Xi markup language and should make
 6 levels of headers to stand out from plain text, code smaples, terms and
 highlights. The first color is yellow (60 degrees HSV color wheel) with
 a value slightly reduced to 90%. For programming languages it's used to
 mark common things that stand out: keywords and tag names.
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h1.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h1.png" width="256">
