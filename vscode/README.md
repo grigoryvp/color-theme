@@ -32,3 +32,5 @@ The color scheme is tailored towards Xi markup language and should make
 highlights. The first color is yellow (60 degrees HSV color wheel) with
 a value slightly reduced to 90%. For programming languages it's used to
 mark common things that stand out: keywords and tag names.
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h1.png" width="256">
