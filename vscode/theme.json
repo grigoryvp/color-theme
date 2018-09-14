@@ -74,6 +74,7 @@
       "variable.other.readwrite.global.ruby",
       "constant.language.symbol.hashkey",
       "variable.object.property.js",
+      "entity.other.attribute-name.html",
       "support.variable.property"
     ],
     "settings": {"foreground": "#FF6666"}
