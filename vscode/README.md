@@ -9,6 +9,10 @@ with "Xi" personal wiki markup language:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_table.png" width="256">
 
+## Color wheel
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_wheel.png" width="256">
+
 ## Color usage
 
 ### Background
@@ -105,3 +109,12 @@ and it's good if they stand out:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h6.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h6.png" width="256">
+
+### String
+
+As previously mentioned, this green color (150 degrees HSV) is used to
+highlight strings in different programming languages and terms like '|foo|'
+in Xi wiki markup. Value is slightly reduced to 90% to make it less bright:
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_string.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_string.png" width="256">

@@ -133,10 +133,10 @@
           imgData.data[pos ++] = 255;
         }
         else {
-          // Backgroun color.
-          imgData.data[pos ++] = 0;
-          imgData.data[pos ++] = 0;
-          imgData.data[pos ++] = 0;
+          // Background color.
+          imgData.data[pos ++] = tinycolor(colorMap['background']).toRgb().r;
+          imgData.data[pos ++] = tinycolor(colorMap['background']).toRgb().g;
+          imgData.data[pos ++] = tinycolor(colorMap['background']).toRgb().b;
           imgData.data[pos ++] = 255;
         }
       }
@@ -144,25 +144,39 @@
 
     ctx.putImageData(imgData, 0, 0);
 
+    const IGNORE_SEQ = ['hidden', 'artboard', 'ui'];
     for (const [colorName, colorVal] of Object.entries(colorMap)) {
       // JSON comments
       if (colorName.startsWith('#')) continue;
+      // Not important enough to clutter color wheel
+      if (IGNORE_SEQ.includes(colorName)) continue;
 
       const color = tinycolor(colorVal).toHsv();
       const dx = Math.cos(color.h / 180 * Math.PI) * color.v * 0.8;
       const dy = Math.sin(color.h / 180 * Math.PI) * color.v * 0.8;
-      const x = cx / 2 * (1 + dx);
-      const y = cy - cy / 2 * (1 + dy);
+      let x = cx / 2 * (1 + dx);
+      let y = cy - cy / 2 * (1 + dy);
+      ctx.fillStyle = tinycolor(colorVal).toHex8String();
       ctx.beginPath();
       ctx.arc(x, y, 10, 0, 2 * Math.PI, false);
-      ctx.fillStyle = tinycolor(colorVal).toHex8String();
       ctx.fill();
       ctx.strokeStyle = "#fff";
       ctx.stroke();
-      ctx.fillStyle = "#fff";
-      ctx.font = "12px Arial";
       const text = `${colorName} ${Math.round(color.s * 100)}`;
-      ctx.fillText(text, x + 15, y);
+      x += 15;
+      if (colorName === 'accent') {
+        x -= 65;
+        y -= 20;
+      }
+      ctx.fillStyle = tinycolor(colorMap['background']).toHex8String();
+      ctx.font = "12px Arial";
+      const textWidth = ctx.measureText(text).width;
+      const textHeight = 12;
+      ctx.beginPath();
+      ctx.rect(x - 2, y - textHeight - 2, textWidth + 4, textHeight + 6);
+      ctx.fill();
+      ctx.fillStyle = "#fff";
+      ctx.fillText(text, x, y);
     }
 
     let svgSrcPatched = svgSrc;
