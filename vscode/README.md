@@ -11,7 +11,7 @@ with "Xi" personal wiki markup language:
 
 ## Color wheel
 
-<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_wheel.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_wheel.png" width="512">
 
 ## Color usage
 
