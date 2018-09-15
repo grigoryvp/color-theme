@@ -40,9 +40,10 @@
     ],
     "settings": {"foreground": "#F0F0F0"}
   }, {
-    "name": "keywords",
+    "name": "heading 1, keyword",
     "scope": [
       "entity.name.function.xi",
+      "heading.1.markdown",
       "keyword",
       "keyword.operator.expression",
       "keyword.operator.logical",
@@ -74,9 +75,20 @@
     ],
     "settings": {"foreground": "#E6E600"}
   }, {
-    "name": "properties",
+    "name": "heading 2, callable",
+    "scope": [
+      "entity.name.class.xi",
+      "heading.2.markdown",
+      "support.function",
+      "keyword.other.special-method",
+      "entity.name.function"
+    ],
+    "settings": {"foreground": "#00b3b3"}
+  }, {
+    "name": "heading 3, property",
     "scope": [
       "constant.character.character-class.regexp.xi",
+      "heading.3.markdown",
       "meta.property-name",
       "support.type.property-name",
       "meta.object-literal.key",
@@ -92,9 +104,10 @@
     ],
     "settings": {"foreground": "#FF6666"}
   }, {
-    "name": "types, classes, interfaces",
+    "name": "heading 4, type, class, interface",
     "scope": [
       "constant.regexp.xi",
+      "heading.4.markdown",
       "entity.other.inherited-class",
       "support.class",
       "storage.type.java",
@@ -111,6 +124,7 @@
     "scope": [
       "punctuation.definition.tag.xi",
       "punctuation.definition.tag",
+      "punctuation.definition.heading.markdown",
       "meta.tag.other.html"
     ],
     "settings": {"foreground": "#334D66"}
@@ -151,22 +165,6 @@
     "settings": {"foreground": "#F0F0F0" }
   }, {
   }, {
-    "name": "number",
-    "scope": [
-      "invalid.xi",
-      "constant.numeric"
-    ],
-    "settings": {"foreground": "#E60073"}
-  }, {
-    "name": "callable",
-    "scope": [
-      "entity.name.class.xi",
-      "support.function",
-      "keyword.other.special-method",
-      "entity.name.function"
-    ],
-    "settings": {"foreground": "#00b3b3"}
-  }, {
     "name": "comments",
     "scope": [
       "beginning.punctuation.definition.list.markdown.xi",
@@ -189,9 +187,10 @@
     ],
     "settings": {"foreground": "#66b2ff"}
   }, {
-    "name": "enums, constants, preprocessor, decorators",
+    "name": "heading 5, enums, preprocessor, constant, decorator",
     "scope": [
       "keyword.control.xi",
+      "heading.5.markdown",
       "constant",
       "support.variable",
       "support.constant.property.math.js",
@@ -206,6 +205,14 @@
       "entity.name.function.preprocessor"
     ],
     "settings": {"foreground": "#ff66ff"}
+  }, {
+    "name": "heading 6, number",
+    "scope": [
+      "invalid.xi",
+      "heading.6.markdown",
+      "constant.numeric"
+    ],
+    "settings": {"foreground": "#E60073"}
   }, {
     "name": "accent",
     "scope": [
