@@ -1,21 +1,27 @@
 # Memory color theme
 
+* [Color wheel](#wheel)
+* [Color table](#table)
+* [Colors](#colors)
+  * [Background](#background)
+  * [Foreground](#foreground)
+
 This color theme is used by me for many years. Example of this color theme
 with "Xi" personal wiki markup language:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/vscode-language-xi/master/doc/xi_illustration.png" height="256">
 
-## Color wheel
+## <a name="wheel"></a>Color wheel
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_wheel.png" width="512">
 
-## Color table
+## <a name="table"></a>Color table
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_table.png" width="256">
 
-## Color usage
+## <a name="colors"></a>Color usage
 
-### Background
+### <a name="background"></a>Background
 
 Taken long time ago from the code sample on the Ruby programming language
 [homepage](https://www.ruby-lang.org/en/) and modified a bit to fit into
@@ -23,7 +29,7 @@ Taken long time ago from the code sample on the Ruby programming language
 and cyan (210 degrees) and has no distinctive name as far as I know.
 Saturation is decreased to 50% and value is decreased to 30%.
 
-### Foreground
+### <a name="foreground"></a>Foreground
 
 As with all color themes it's complimentary to background. Appears to be
 a nice shade of sand and reminds me old "Yellow on blue" Norton Commander
@@ -118,3 +124,16 @@ in Xi wiki markup. Value is slightly reduced to 90% to make it less bright:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_string.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_string.png" width="256">
+
+### Comments and hidden elements
+
+These colors are calculated from from foreground-background pair by
+manipulation saturation and value. "Hidden" color is used to dim syntax
+elements that does not provide any value to a developer. Obvious example is
+'<' and '>' xml tag syntax. Or various elements used to mark parts of Xi
+wiki: headings, code samples, wikiwords, terms. VSCode will use "hidden"
+color only if syntax is correct, so missed xml tag brace will be instantly
+visible:
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_comment.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_hidden.png" width="256">
