@@ -22,7 +22,7 @@ with [Xi personal wiki markup language](https://marketplace.visualstudio.com/ite
   * [Comment, hidden](#comment)
   * [Accent](#accent)
   * [Link](#link)
-. [License](#license)
+* [License](#license)
 
 ## Color wheel
 
