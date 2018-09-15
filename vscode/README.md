@@ -22,6 +22,7 @@ with [Xi personal wiki markup language](https://marketplace.visualstudio.com/ite
   * [Comment, hidden](#comment)
   * [Accent](#accent)
   * [Link](#link)
+. [License](#license)
 
 ## Color wheel
 
@@ -166,3 +167,10 @@ Link color is a modified foregound/background color (210 degrees HSV,
 located between blue and cyan) with some saturation returned to 60%:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_link.png" width="256">
+
+# License
+
+The following licensing applies to Memory color theme:
+Attribution-NonCommercial-NoDerivatives 4.0 International
+(CC BY-NC-ND 4.0). For more information go to
+https://creativecommons.org/licenses/by-nc-nd/4.0/
