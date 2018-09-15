@@ -12,14 +12,16 @@ with [Xi personal wiki markup language](https://marketplace.visualstudio.com/ite
 * [Colors](#color-usage)
   * [Background](#background)
   * [Foreground](#foreground)
-  * [Heading 1](#heading-1)
-  * [Heading 2](#heading-2)
-  * [Heading 3](#heading-3)
-  * [Heading 4](#heading-4)
-  * [Heading 5](#heading-5)
-  * [Heading 6](#heading-6)
+  * [H1, keyword, tag](#heading-1)
+  * [H2, callable](#heading-2)
+  * [H3, property](#heading-3)
+  * [H4, type](#heading-4)
+  * [H5, emum, preprocessor](#heading-5)
+  * [H6, number](#heading-6)
   * [String](#string)
-  * [Comment](#comment)
+  * [Comment, hidden](#comment)
+  * [Accent](#accent)
+  * [Link](#link)
 
 ## Color wheel
 
@@ -147,3 +149,20 @@ visible:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_comment.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_hidden.png" width="256">
+
+### Accent
+
+Accent color is a modified h2/callable with (Cyan, 180 degrees HSV) with
+value increaded from 50% to 70%. Such increase make color to stand out as
+a highly acidic one, handly to highlight something that is very important.
+It is used in the Xi markup language for backtick highlight syntax but has
+no use in the programming languages right now:
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_accent.png" width="256">
+
+### Link
+
+Link color is a modified foregound/background color (210 degrees HSV,
+located between blue and cyan) with some saturation returned to 60%:
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_link.png" width="256">

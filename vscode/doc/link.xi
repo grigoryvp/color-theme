@@ -1,0 +1,2 @@
+. [wikiword link].
+. |https://link|.
