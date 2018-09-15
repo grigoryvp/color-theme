@@ -91,3 +91,17 @@ like 'PI' in 'Math.PI':
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h5.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h5.png" width="256">
+
+### Heading 6
+
+From my personal experience using Xi personal wiki for more than 10 years
+there are no real need for more than 6 nested header levels (after all,
+Miller's purse size is 4-5 according to the latest neurophysiology research).
+Last 'pure' color is purple, located between red and magenta (330 degrees
+HSV) with value reduced a bit to 90% in order to make it less acidic, but
+still visible and distinct from other colors. For programming languages it is
+used for numbers, since it's bad practice to use "magic numbers" in our code
+and it's good if they stand out:
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h6.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h6.png" width="256">
