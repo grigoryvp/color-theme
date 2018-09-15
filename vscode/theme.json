@@ -23,24 +23,8 @@
     "sideBar.border": "#152535"
   },
   "tokenColors": [{
-    "name": "Language operators like '+', '-' etc",
-    "scope": [
-      "constant.other.color.rgb-value.xi",
-      "punctuation",
-      "keyword.operator",
-      "keyword.control.ternary.java",
-      "meta.tag.xml",
-      "meta.tag.other.html",
-      "meta.brace.round",
-      "meta.brace.square",
-      "meta.structure.dictionary.json",
-      "storage.type.generic.wildcard",
-      "keyword.operator.logical.java",
-      "storage.type.function.arrow"
-    ],
-    "settings": {"foreground": "#F0F0F0"}
-  }, {
     "name": "heading 1, keyword",
+    "settings": {"foreground": "#E6E600"},
     "scope": [
       "entity.name.function.xi",
       "heading.1.markdown",
@@ -72,20 +56,20 @@
       "constant.language.import-export-all.ts",
       "constant.language.ruby",
       "constant.language.python"
-    ],
-    "settings": {"foreground": "#E6E600"}
+    ]
   }, {
     "name": "heading 2, callable",
+    "settings": {"foreground": "#00b3b3"},
     "scope": [
       "entity.name.class.xi",
       "heading.2.markdown",
       "support.function",
       "keyword.other.special-method",
       "entity.name.function"
-    ],
-    "settings": {"foreground": "#00b3b3"}
+    ]
   }, {
     "name": "heading 3, property",
+    "settings": {"foreground": "#FF6666"},
     "scope": [
       "constant.character.character-class.regexp.xi",
       "heading.3.markdown",
@@ -101,10 +85,10 @@
       "variable.object.property.js",
       "entity.other.attribute-name.html",
       "support.variable.property"
-    ],
-    "settings": {"foreground": "#FF6666"}
+    ]
   }, {
     "name": "heading 4, type, class, interface",
+    "settings": {"foreground": "#b366ff"},
     "scope": [
       "constant.regexp.xi",
       "heading.4.markdown",
@@ -117,77 +101,10 @@
       "entity.name.type",
       "support.type.primitive.ts",
       "entity.other.attribute-name.class.jade"
-    ],
-    "settings": {"foreground": "#b366ff"}
-  }, {
-    "name": "elements to dim",
-    "scope": [
-      "punctuation.definition.tag.xi",
-      "punctuation.definition.tag",
-      "punctuation.definition.heading.markdown",
-      "meta.tag.other.html"
-    ],
-    "settings": {"foreground": "#334D66"}
-  }, {
-    "name": "variable names",
-    "scope": [
-      "source.js",
-      "variable.other.constant.js",
-      "variable.other.constant.ts",
-      "entity.other.attribute-name",
-      "support.variable.object"
-    ],
-    "settings": {"foreground": "#F0B16C" }
-  }, {
-    "name": "strings",
-    "scope": [
-      "beginning.punctuation.definition.quote.markdown.xi",
-      "punctuation.definition.heading",
-      "storage.modifier.package.java",
-      "storage.modifier.import.java",
-      "string"
-    ],
-    "settings": {"foreground": "#00E673" }
-  }, {
-    "name": "escaped within string; same as link now",
-    "scope": [
-      "keyword.control.anchor.regexp",
-      "constant.character.escape"
-    ],
-    "settings": {"foreground": "#66b3ff"}
-  }, {
-    "name": "literal string",
-    "scope": [
-      "text.xml",
-      "text.html.basic",
-      "text.html.vue-html"
-    ],
-    "settings": {"foreground": "#F0F0F0" }
-  }, {
-  }, {
-    "name": "comments",
-    "scope": [
-      "beginning.punctuation.definition.list.markdown.xi",
-      "comment",
-      "keyword.other.phpdoc",
-      "keyword.other.documentation.javadoc",
-      "punctuation.definition.comment",
-      "punctuation.definition.block.tag.jsdoc",
-      "storage.type.class.jsdoc",
-      "string.quoted.docstring.multi.python",
-      "variable.other.jsdoc"
-    ],
-    "settings": {"foreground": "#6B8299"}
-  }, {
-    "name": "links",
-    "scope": [
-      "constant.character.xi",
-      "string.other.link.title.markdown",
-      "meta.link"
-    ],
-    "settings": {"foreground": "#66b2ff"}
+    ]
   }, {
     "name": "heading 5, enums, preprocessor, constant, decorator",
+    "settings": {"foreground": "#ff66ff"},
     "scope": [
       "keyword.control.xi",
       "heading.5.markdown",
@@ -203,21 +120,103 @@
       "variable.other.enummember.ts",
       "entity.name.function.decorator.python",
       "entity.name.function.preprocessor"
-    ],
-    "settings": {"foreground": "#ff66ff"}
+    ]
   }, {
     "name": "heading 6, number",
+    "settings": {"foreground": "#E60073"},
     "scope": [
       "invalid.xi",
       "heading.6.markdown",
       "constant.numeric"
-    ],
-    "settings": {"foreground": "#E60073"}
+    ]
+  }, {
+    "name": "string",
+    "settings": {"foreground": "#00E673" },
+    "scope": [
+      "beginning.punctuation.definition.quote.markdown.xi",
+      "punctuation.definition.heading",
+      "storage.modifier.package.java",
+      "storage.modifier.import.java",
+      "string"
+    ]
+  }, {
+    "name": "comments",
+    "settings": {"foreground": "#6B8299"},
+    "scope": [
+      "beginning.punctuation.definition.list.markdown.xi",
+      "comment",
+      "keyword.other.phpdoc",
+      "keyword.other.documentation.javadoc",
+      "punctuation.definition.comment",
+      "punctuation.definition.block.tag.jsdoc",
+      "storage.type.class.jsdoc",
+      "string.quoted.docstring.multi.python",
+      "variable.other.jsdoc"
+    ]
+  }, {
+    "name": "link",
+    "settings": {"foreground": "#66b2ff"},
+    "scope": [
+      "constant.character.xi",
+      "string.other.link.title.markdown",
+      "meta.link"
+    ]
   }, {
     "name": "accent",
+    "settings": {"foreground": "#00E6E6"},
     "scope": [
       "accent.xi"
-    ],
-    "settings": {"foreground": "#00E6E6"}
+    ]
+  }, {
+    "name": "language operators like '+', '-' etc",
+    "settings": {"foreground": "#F0F0F0"},
+    "scope": [
+      "constant.other.color.rgb-value.xi",
+      "punctuation",
+      "keyword.operator",
+      "keyword.control.ternary.java",
+      "meta.tag.xml",
+      "meta.tag.other.html",
+      "meta.brace.round",
+      "meta.brace.square",
+      "meta.structure.dictionary.json",
+      "storage.type.generic.wildcard",
+      "keyword.operator.logical.java",
+      "storage.type.function.arrow"
+    ]
+  }, {
+    "name": "elements to dim",
+    "settings": {"foreground": "#334D66"},
+    "scope": [
+      "punctuation.definition.tag.xi",
+      "punctuation.definition.tag",
+      "punctuation.definition.heading.markdown",
+      "meta.tag.other.html"
+    ]
+  }, {
+    "name": "variable names",
+    "settings": {"foreground": "#F0B16C" },
+    "scope": [
+      "source.js",
+      "variable.other.constant.js",
+      "variable.other.constant.ts",
+      "entity.other.attribute-name",
+      "support.variable.object"
+    ]
+  }, {
+    "name": "escaped within string; same as link now",
+    "settings": {"foreground": "#66b3ff"},
+    "scope": [
+      "keyword.control.anchor.regexp",
+      "constant.character.escape"
+    ]
+  }, {
+    "name": "literal string",
+    "settings": {"foreground": "#F0F0F0" },
+    "scope": [
+      "text.xml",
+      "text.html.basic",
+      "text.html.vue-html"
+    ]
   }]
 }
