@@ -5,9 +5,17 @@
 * [Colors](#colors)
   * [Background](#background)
   * [Foreground](#foreground)
+  * [H1, keyword, tag](#h1)
+  * [H2, callable](#h2)
+  * [H3, property](#h3)
+  * [H4, type](#h4)
+  * [H5, emum, preprocessor](#h5)
+  * [H6, number](#h6)
+  * [String](#string)
+  * [Comment, hidden](#comment)
 
 This color theme is used by me for many years. Example of this color theme
-with "Xi" personal wiki markup language:
+with [Xi personal wiki markup language](https://marketplace.visualstudio.com/items?itemName=grigoryvp.language-xi):
 
 <img src="https://raw.githubusercontent.com/grigoryvp/vscode-language-xi/master/doc/xi_illustration.png" height="256">
 
@@ -35,7 +43,7 @@ As with all color themes it's complimentary to background. Appears to be
 a nice shade of sand and reminds me old "Yellow on blue" Norton Commander
 color theme, just not **that** bright.
 
-### Heading 1
+### <a name="h1"></a>Heading 1
 
 The color theme is tailored towards Xi markup language and should make
 6 levels of headers to stand out from plain text, code smaples, terms and
@@ -46,7 +54,7 @@ mark common things that stand out: keywords and tag names:
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h1.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h1.png" width="256">
 
-### Heading 2
+### <a name="h2"></a>Heading 2
 
 Second color is a cyan (180 degrees HSV) with value decreaded to 70%, making
 it less bright. Like yellow for h1, this color is completely different from
@@ -58,7 +66,7 @@ methods, named code blocks and so on:
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h2.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h2.png" width="256">
 
-### Heading 3
+### <a name="h3"></a>Heading 3
 
 From third color it's starting to be complicated. The only one non-toxic
 "pure" color remaining is green. We can use it for 3-rd most popular syntax
@@ -77,7 +85,7 @@ heading 3 property access color:
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h3.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h3.png" width="256">
 
-### Heading 4
+### <a name="h4"></a>Heading 4
 
 With all non-acide pure colors used and green reserved for strings, we are on
 an unsteady ground now. Violet color, located between blue and magenta
@@ -89,7 +97,7 @@ types: both language-defined like 'String' and user-defined like 'Foo' in
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h4.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h4.png" width="256">
 
-### Heading 5
+### <a name="h5"></a>Heading 5
 
 Only magenta and red remains. Among the two of them magents (300 degrees HSV)
 looks less acidic, with saturation reduced to 60%. For programming languages
@@ -102,7 +110,7 @@ like 'PI' in 'Math.PI':
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h5.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h5.png" width="256">
 
-### Heading 6
+### <a name="h6"></a>Heading 6
 
 From my personal experience using Xi personal wiki for more than 10 years
 there are no real need for more than 6 nested header levels (after all,
@@ -116,7 +124,7 @@ and it's good if they stand out:
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h6.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h6.png" width="256">
 
-### String
+### <a name="string"></a>String
 
 As previously mentioned, this green color (150 degrees HSV) is used to
 highlight strings in different programming languages and terms like '|foo|'
@@ -125,7 +133,7 @@ in Xi wiki markup. Value is slightly reduced to 90% to make it less bright:
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_string.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_string.png" width="256">
 
-### Comments and hidden elements
+### <a name="comment"></a>Comments and hidden elements
 
 These colors are calculated from from foreground-background pair by
 manipulation saturation and value. "Hidden" color is used to dim syntax
