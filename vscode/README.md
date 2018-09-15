@@ -78,3 +78,16 @@ types: both language-defined like 'String' and user-defined like 'Foo' in
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h4.png" width="256">
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h4.png" width="256">
+
+### Heading 5
+
+Only magenta and red remains. Among the two of them magents (300 degrees HSV)
+looks less acidic, with saturation reduced to 60%. For programming languages
+it is used for all kind of constants: enum values, preprocessor directives
+and so on. Note, that identifier declared with 'const' keyword are
+highlighted with this color, since they **usage** in the code is same as
+normal identifier. Normally we see little magenta in our code for things
+like 'PI' in 'Math.PI':
+
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/js_h5.png" width="256">
+<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_h5.png" width="256">
