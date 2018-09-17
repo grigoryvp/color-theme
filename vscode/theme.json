@@ -109,6 +109,7 @@
       "keyword.control.xi",
       "heading.5.markdown",
       "constant",
+      "meta.decorator",
       "support.variable",
       "support.constant.property.math.js",
       "variable.other.constant",
