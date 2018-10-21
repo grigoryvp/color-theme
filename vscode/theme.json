@@ -220,5 +220,13 @@
       "text.html.basic",
       "text.html.vue-html"
     ]
+  }, {
+    "name": "accent",
+    "settings": {"foreground": "#00e6e6" },
+    "scope": [
+      "entity.name.tag.template.html",
+      "entity.name.tag.script.html",
+      "entity.name.tag.style.html"
+    ]
   }]
 }
