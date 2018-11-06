@@ -2,7 +2,7 @@
   "name": "memory-theme",
   "displayName": "Memory Color Theme",
   "description": "Memory Color Theme for Visual Studio Code",
-  "version": "1.1.32",
+  "version": "1.1.33",
   "publisher": "grigoryvp",
   "engines": {
     "vscode": "^1.19.0"
