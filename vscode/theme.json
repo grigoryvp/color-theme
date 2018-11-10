@@ -102,6 +102,7 @@
       "support.constant.math.js",
       "entity.name.type",
       "support.type.primitive.ts",
+      "support.type.python",
       "entity.other.attribute-name.class.jade"
     ]
   }, {
