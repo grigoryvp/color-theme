@@ -172,6 +172,12 @@
       "accent.xi"
     ]
   }, {
+    "name": "wikiword",
+    "settings": {"foreground": "#ABB2B6"},
+    "scope": [
+      "wikiword.xi"
+    ]
+  }, {
     "name": "language operators like '+', '-' etc",
     "settings": {"foreground": "#F0F0F0"},
     "scope": [
