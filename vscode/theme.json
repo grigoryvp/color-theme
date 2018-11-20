@@ -20,7 +20,11 @@
     "breadcrumb.background": "#152535",
     "editorGroupHeader.tabsBackground": "#152535",
     "statusBar.background": "#152535",
-    "sideBar.border": "#152535"
+    "sideBar.border": "#152535",
+    "tab.activeModifiedBorder": "#B05F5F",
+    "tab.unfocusedActiveModifiedBorder": "#B05F5F",
+    "tab.inactiveModifiedBorder": "#A75353",
+    "tab.unfocusedInactiveModifiedBorder": "#A75353"
   },
   "tokenColors": [{
     "name": "heading 1, keyword",
