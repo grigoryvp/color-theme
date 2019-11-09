@@ -7,5 +7,5 @@ Attribution-NonCommercial-NoDerivatives 4.0 International
 
 ## Known issues
 
-* **accent** color is not very distinktive from **h2**.
+* **accent** color is not very distinctive from **h2**.
 * **wikiword** color in **xi** stands out too much.
