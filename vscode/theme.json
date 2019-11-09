@@ -12,10 +12,6 @@
     "statusBar.foreground": "#e6ac73",
     "tab.activeForeground": "#e6ac73",
     "editor.lineHighlightBackground": "#203040",
-    "list.inactiveSelectionBackground": "#152535",
-    "list.hoverBackground": "#152535",
-    "list.activeSelectionBackground": "#152535",
-    "list.focusBackground": "#152535",
     "editorGutter.background": "#152535",
     "breadcrumb.background": "#152535",
     "editorGroupHeader.tabsBackground": "#152535",
@@ -24,7 +20,12 @@
     "tab.activeModifiedBorder": "#B05F5F",
     "tab.unfocusedActiveModifiedBorder": "#B05F5F",
     "tab.inactiveModifiedBorder": "#A75353",
-    "tab.unfocusedInactiveModifiedBorder": "#A75353"
+    "tab.unfocusedInactiveModifiedBorder": "#A75353",
+    "list.focusBackground": "#000",
+    "list.hoverBackground": "#000",
+    "list.inactiveSelectionBackground": "#000",
+    "list.activeSelectionBackground": "#000",
+    "editorWidget.background": "#203040"
   },
   "tokenColors": [{
     "name": "heading 1, keyword",
