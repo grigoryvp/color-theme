@@ -13,7 +13,7 @@
   "icon": "icon.png",
   "repository": "https://github.com/grigoryvp/color-theme.git",
   "scripts": {
-    "build": "vsce package",
+    "build": "vsce package --out ./out/extension.vsix",
     "publish": "chrome https://marketplace.visualstudio.com/manage"
   },
   "contributes": {
