@@ -26,6 +26,6 @@
     ]
   },
   "devDependencies": {
-    "vsce": "^1.65.0"
+    "vsce": "^1.69.0"
   }
 }
