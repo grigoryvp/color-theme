@@ -32,6 +32,7 @@
     "settings": {"foreground": "#E6E600"},
     "scope": [
       "entity.name.function.xi",
+      "storage.type.rust",
       "heading.1.markdown",
       "keyword",
       "keyword.operator.expression",
