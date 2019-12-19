@@ -115,6 +115,7 @@
     "name": "heading 5, enums, preprocessor, constant, decorator",
     "settings": {"foreground": "#ff66ff"},
     "scope": [
+      "support.other.macro.rust",
       "keyword.control.xi",
       "heading.5.markdown",
       "constant",
@@ -175,7 +176,10 @@
     "name": "accent",
     "settings": {"foreground": "#00E6E6"},
     "scope": [
-      "accent.xi"
+      "accent.xi",
+      "entity.name.tag.template.html",
+      "entity.name.tag.script.html",
+      "entity.name.tag.style.html"
     ]
   }, {
     "name": "wikiword",
@@ -235,14 +239,6 @@
       "text.xml",
       "text.html.basic",
       "text.html.vue-html"
-    ]
-  }, {
-    "name": "accent",
-    "settings": {"foreground": "#00e6e6" },
-    "scope": [
-      "entity.name.tag.template.html",
-      "entity.name.tag.script.html",
-      "entity.name.tag.style.html"
     ]
   }]
 }
