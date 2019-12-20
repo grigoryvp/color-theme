@@ -115,6 +115,7 @@
     "name": "heading 5, enums, preprocessor, constant, decorator",
     "settings": {"foreground": "#ff66ff"},
     "scope": [
+      "meta.attribute.rust",
       "support.other.macro.rust",
       "keyword.control.xi",
       "heading.5.markdown",
