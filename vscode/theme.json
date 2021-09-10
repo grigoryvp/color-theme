@@ -25,7 +25,14 @@
     "list.hoverBackground": "#000",
     "list.inactiveSelectionBackground": "#000",
     "list.activeSelectionBackground": "#000",
-    "editorWidget.background": "#203040"
+    "editorWidget.background": "#203040",
+    "editorBracketHighlight.foreground1": "#E6E6CF",
+    "editorBracketHighlight.foreground2": "#CFE6E6",
+    "editorBracketHighlight.foreground3": "#FFE6E6",
+    "editorBracketHighlight.foreground4": "#F2E6FF",
+    "editorBracketHighlight.foreground5": "#FFE6FF",
+    "editorBracketHighlight.foreground6": "#FFE6F2",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#E60073"
   },
   "tokenColors": [{
     "name": "heading 1, keyword",
