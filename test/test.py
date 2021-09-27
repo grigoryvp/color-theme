@@ -9,3 +9,4 @@ class Foo(object):
       self._foo = {
         foo: ["stri\ng", 'stri\ng']
       }
+    return 10

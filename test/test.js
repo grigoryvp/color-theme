@@ -8,6 +8,7 @@ class Foo extends Object {
       this._foo = {
         foo: ["stri\ng", 'stri\ng', `stri\ng ${foo}`, /reg\\exp$/]
       };
+      return 10;
     }
   }
 }

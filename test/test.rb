@@ -14,5 +14,6 @@ class Foo < Bar
       "bar" => 2
     }
     _seq = [true, false]
+    return 10
   end
 end
