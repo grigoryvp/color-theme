@@ -47,6 +47,7 @@
       "keyword.operator.new",
       "variable.language.this",
       "variable.language.super.js",
+      "variable.language.self.lua",
       "variable.parameter.function.language.special.self",
       "variable.language.special.self",
       "support.type.object.module.js",
