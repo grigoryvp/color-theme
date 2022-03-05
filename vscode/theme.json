@@ -33,7 +33,20 @@
     "editorBracketHighlight.foreground4": "#F2E6FF",
     "editorBracketHighlight.foreground5": "#FFE6FF",
     "editorBracketHighlight.foreground6": "#FFE6F2",
-    "editorBracketHighlight.unexpectedBracket.foreground": "#E60073"
+    "editorBracketHighlight.unexpectedBracket.foreground": "#E60073",
+    "editorBracketPairGuide.background1": "#203040",
+    "editorBracketPairGuide.background2": "#203040",
+    "editorBracketPairGuide.background3": "#203040",
+    "editorBracketPairGuide.background4": "#203040",
+    "editorBracketPairGuide.background5": "#203040",
+    "editorBracketPairGuide.background6": "#203040",
+    "editorBracketPairGuide.activeBackground1": "#152535",
+    "editorBracketPairGuide.activeBackground2": "#152535",
+    "editorBracketPairGuide.activeBackground3": "#152535",
+    "editorBracketPairGuide.activeBackground4": "#152535",
+    "editorBracketPairGuide.activeBackground5": "#152535",
+    "editorBracketPairGuide.activeBackground6": "#152535",
+    "editorRuler.foreground": "#152535"
   },
   "tokenColors": [{
     "name": "heading 1, keyword",
