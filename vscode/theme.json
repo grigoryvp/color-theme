@@ -12,6 +12,7 @@
     "statusBar.foreground": "#e6ac73",
     "tab.activeForeground": "#e6ac73",
     "editor.lineHighlightBackground": "#203040",
+    "editor.lineHighlightBorder": "#203040",
     "editorGutter.background": "#152535",
     "breadcrumb.background": "#152535",
     "editorGroupHeader.tabsBackground": "#152535",
