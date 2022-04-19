@@ -14,7 +14,7 @@
   "repository": "https://github.com/grigoryvp/color-theme.git",
   "scripts": {
     "build": "vsce package --out ./out/extension.vsix",
-    "publish": "chrome https://marketplace.visualstudio.com/manage"
+    "publish": "open-cli https://marketplace.visualstudio.com/manage"
   },
   "contributes": {
     "themes": [
@@ -26,6 +26,7 @@
     ]
   },
   "devDependencies": {
-    "vsce": "^2.6.7"
+    "vsce": "^2.6.7",
+    "open-cli": "^7.0.1"
   }
 }
