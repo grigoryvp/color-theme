@@ -71,12 +71,15 @@
       "storage.modifier",
       "storage.type.primitive",
       "storage.type.ts",
+      "storage.type.tsx",
       "storage.type.js",
       "storage.type.function.js",
       "storage.type.function.ts",
+      "storage.type.function.tsx",
       "storage.type.function.python",
       "storage.type.class.js",
       "storage.type.class.ts",
+      "storage.type.class.tsx",
       "storage.type.class.python",
       "storage.type.function.async.python",
       "storage.type.built-in.primitive.c",
@@ -87,6 +90,7 @@
       "constant.language.undefined.js",
       "constant.language.boolean",
       "constant.language.import-export-all.ts",
+      "constant.language.import-export-all.tsx",
       "constant.language.ruby",
       "constant.language.python"
     ]
@@ -134,6 +138,7 @@
       "support.constant.math.js",
       "entity.name.type",
       "support.type.primitive.ts",
+      "support.type.primitive.tsx",
       "support.type.python",
       "entity.other.attribute-name.class.jade"
     ]
@@ -156,6 +161,7 @@
       "meta.function.decorator.python",
       "keyword.control.import.c",
       "variable.other.enummember.ts",
+      "variable.other.enummember.tsx",
       "entity.name.function.decorator.python",
       "entity.name.function.preprocessor"
     ]
@@ -242,12 +248,13 @@
       "meta.tag.other.html"
     ]
   }, {
-    "name": "variable names",
+    "name": "general identifier names",
     "settings": {"foreground": "#F0B16C" },
     "scope": [
       "source.js",
       "variable.other.constant.js",
       "variable.other.constant.ts",
+      "variable.other.constant.tsx",
       "entity.other.attribute-name",
       "meta.function-call.arguments.python",
       "support.variable.object"
