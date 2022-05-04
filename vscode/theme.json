@@ -154,7 +154,6 @@
       "meta.decorator",
       "support.variable",
       "support.constant.property.math.js",
-      "variable.other.constant",
       "meta.property-value.css",
       "meta.preprocessor",
       "meta.declaration.annotation.java",
