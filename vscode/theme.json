@@ -224,6 +224,7 @@
     "settings": {"foreground": "#F0F0F0"},
     "scope": [
       "constant.other.color.rgb-value.xi",
+      "constant.language.import-export-all.tsx",
       "beginning.punctuation.definition.list.markdown",
       "punctuation",
       "keyword.operator",
