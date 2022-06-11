@@ -139,6 +139,7 @@
       "entity.name.type",
       "support.type.primitive.ts",
       "support.type.primitive.tsx",
+      "support.type.builtin.tsx",
       "support.type.python",
       "entity.other.attribute-name.class.jade"
     ]
