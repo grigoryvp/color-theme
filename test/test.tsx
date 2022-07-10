@@ -12,3 +12,4 @@ class Foo extends Object {
     }
   }
 }
+console.log("foo");

@@ -285,6 +285,7 @@
     ]
   }],
   "semanticTokenColors": {
-    "module": "#66b2ff"
+    "module": "#66b2ff",
+    "*.defaultLibrary": { "bold": true }
   }
 }
