@@ -167,6 +167,7 @@
       "keyword.control.import.c",
       "variable.other.enummember.ts",
       "variable.other.enummember.tsx",
+      "variable.other.constant.ruby",
       "entity.name.function.decorator.python",
       "entity.name.function.preprocessor"
     ]
