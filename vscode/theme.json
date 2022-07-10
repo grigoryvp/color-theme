@@ -63,6 +63,7 @@
       "keyword.operator.expression",
       "keyword.operator.logical",
       "keyword.operator.new",
+      "keyword.other.special-method.ruby",
       "variable.language.this",
       "variable.language.super.js",
       "variable.language.self.lua",
