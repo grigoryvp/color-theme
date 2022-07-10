@@ -1,6 +1,7 @@
 {
   "name": "grigoryvp-memory",
   "type": "dark",
+  "semanticHighlighting": true,
   "colors": {
     "editor.background": "#26394d",
     "activityBar.background": "#152535",
@@ -282,5 +283,8 @@
       "text.html.basic",
       "text.html.vue-html"
     ]
-  }]
+  }],
+  "semanticTokenColors": {
+    "module": "#66b2ff"
+  }
 }
