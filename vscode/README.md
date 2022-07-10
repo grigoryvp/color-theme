@@ -21,7 +21,7 @@ with [Xi personal wiki markup language](https://marketplace.visualstudio.com/ite
   * [String](#string)
   * [Comment, hidden](#comment)
   * [Accent](#accent)
-  * [Link](#link)
+  * [Link, dependency](#link)
 * [License](#license)
 
 ## Color wheel
@@ -30,7 +30,23 @@ with [Xi personal wiki markup language](https://marketplace.visualstudio.com/ite
 
 ## Color table
 
-<img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/color_table.png" width="256">
+<div style="background-color: #1a2633; display: inline-block; padding-left: 20px">
+  <div style="background-color: #26394d; display: inline-block; padding: 10px;">
+    <div style="color: #e6ac73;">plain text</div>
+    <div style="color: #e6e600;">h1, keyword, tag</div>
+    <div style="color: #00b3b3;">h2, callable</div>
+    <div style="color: #ff6666;">h3, property</div>
+    <div style="color: #b366ff;">h4, type</div>
+    <div style="color: #ff66ff;">h5, enum, preprocessor, constant</div>
+    <div style="color: #e60073;">h6, number (beware h6 and numbers!)</div>
+    <div style="color: #6b8299;">comment</div>
+    <div style="color: #334d66;">hidden</div>
+    <div style="color: #00e6e6;">accent</div>
+    <div style="color: #66b3ff;">link, dependency</div>
+    <div style="color: #00e673;">string</div>
+    <div style="color: #f0f0f0;">syntax elements</div>
+  </div>
+</div>
 
 ## Color usage
 
