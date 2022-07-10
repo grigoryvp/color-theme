@@ -94,6 +94,7 @@
       "constant.language.null",
       "constant.language.boolean",
       "constant.language.undefined",
+      "constant.language.nan",
       "constant.language.import-export-all.ts",
       "constant.language.import-export-all.tsx",
       "constant.language.ruby",
