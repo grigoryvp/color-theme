@@ -257,6 +257,7 @@
     "settings": {"foreground": "#F0B16C" },
     "scope": [
       "source.js",
+      "variable.parameter",
       "variable.other.constant.js",
       "variable.other.constant.ts",
       "variable.other.constant.tsx",
