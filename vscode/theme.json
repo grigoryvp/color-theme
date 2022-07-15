@@ -51,7 +51,13 @@
     "editorBracketPairGuide.activeBackground4": "#152535",
     "editorBracketPairGuide.activeBackground5": "#152535",
     "editorBracketPairGuide.activeBackground6": "#152535",
-    "editorRuler.foreground": "#152535"
+    "editorRuler.foreground": "#152535",
+    "editorInlayHint.foreground": "#6B8299",
+    "editorInlayHint.background": "#152535",
+    "editorInlayHint.typeForeground": "#B366FF",
+    "editorInlayHint.typeBackground": "#152535",
+    "editorInlayHint.parameterForeground": "#6B8299",
+    "editorInlayHint.parameterBackground": "#152535"
   },
   "tokenColors": [{
     "name": "heading 1, keyword",
