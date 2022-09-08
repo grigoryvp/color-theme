@@ -156,6 +156,7 @@
       "support.type.primitive.tsx",
       "support.type.builtin.tsx",
       "support.type.python",
+      "support.type.exception.python",
       "entity.other.attribute-name.class.jade"
     ]
   }, {
