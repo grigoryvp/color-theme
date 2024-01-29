@@ -199,7 +199,11 @@
         if (colorName.startsWith('#')) continue;
         const label = document.createElement('div');
         const colorHex = tinycolor(colorVal).toHex8String().slice(0, -2);
-        label.innerHTML = `${colorName} ${colorHex}`;
+        const colorR = tinycolor(colorVal).toRgb().r;
+        const colorG = tinycolor(colorVal).toRgb().g;
+        const colorB = tinycolor(colorVal).toRgb().b;
+        const colorRGB = `${colorR}, ${colorG}, ${colorB}`;
+        label.innerHTML = `${colorName} ${colorHex} ${colorRGB}`;
         root.appendChild(label);
       }
     }
