@@ -59,7 +59,9 @@
     "editorInlayHint.typeForeground": "#B366FF",
     "editorInlayHint.typeBackground": "#152535",
     "editorInlayHint.parameterForeground": "#6B8299",
-    "editorInlayHint.parameterBackground": "#152535"
+    "editorInlayHint.parameterBackground": "#152535",
+    "editorUnnecessaryCode.border": "#FF8080",
+    "editorUnnecessaryCode.opacity": "#FF8080FF"
   },
   "tokenColors": [{
     "name": "heading 1, keyword",
