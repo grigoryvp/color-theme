@@ -242,7 +242,7 @@
     "name": "wikiword",
     "settings": {"foreground": "#C2B19D"},
     "scope": [
-      "wikiword.xi"
+      "wikiword"
     ]
   }, {
     "name": "language operators like '+', '-' etc",
