@@ -22,6 +22,7 @@ with [Xi personal wiki markup language](https://marketplace.visualstudio.com/ite
   * [Comment, hidden](#comment)
   * [Accent](#accent)
   * [Link, dependency](#link)
+* [Customization](#customization)
 * [License](#license)
 
 ## Color wheel
@@ -183,6 +184,29 @@ Link color is a modified foregound/background color (210 degrees HSV,
 located between blue and cyan) with some saturation returned to 60%:
 
 <img src="https://raw.githubusercontent.com/grigoryvp/color-theme/master/vscode/doc/xi_link.png" width="256">
+
+# Customization
+
+Color scheme is customized by adding `editor.tokenColorCustomizations` dict
+attribute to the VSCode configuration `json` file. The `textMateRules` list
+sub-attribute specifies the list of dictionaries, where each dictionary
+contains two attributes. The `scope` attribute specifies a TextMate scope
+whose coloring should be changed. These names can be viewed by selecting
+the "Developer: Inspect Editor Tokens and Scopes" from the VSCode tool
+palette. The `settings` attribute is used to specify the new color,
+decoration etc. For example, this `settings.json` VSCode config file changes
+XML tags from "dimmed" to colored:
+
+```json
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [{
+      "scope": "punctuation.definition.tag",
+      "settings": {"foreground": "#66B2FF"}
+    }]
+  }
+}
+```
 
 # License
 
