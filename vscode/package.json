@@ -26,7 +26,7 @@
     ]
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.22.0",
-    "open-cli": "^7.2.0"
+    "@vscode/vsce": "^3.2.0",
+    "open-cli": "^8.0.0"
   }
 }
