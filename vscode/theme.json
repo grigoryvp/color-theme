@@ -93,6 +93,7 @@
       "storage.type.function.ts",
       "storage.type.function.tsx",
       "storage.type.function.python",
+      "storage.type.function.lambda.python",
       "storage.type.class.js",
       "storage.type.class.ts",
       "storage.type.class.tsx",
