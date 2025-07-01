@@ -103,6 +103,7 @@
       "storage.type.built-in.primitive.cpp",
       "storage.type.built-in.cpp",
       "storage.type.built-in.c",
+      "storage.type.type.tsx",
       "constant.language.null",
       "constant.language.boolean",
       "constant.language.undefined",
