@@ -81,6 +81,7 @@
       "variable.parameter.function.language.special.self",
       "variable.language.special.self",
       "support.type.object.module.js",
+      "support.type.builtin.ts",
       "support.constant.json.js",
       "support.class.console.js",
       "entity.name.tag",
